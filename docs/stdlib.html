@@ -1,0 +1,370 @@
+<html>
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app200.us.archive.org';v.server_ms=226;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=SOX25l-I" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://jonathan.tang.name:80/files/scheme_in_48/tutorial/stdlib.html","20140105123604","http://web.archive.org/","web","/_static/",
+	      "1388925364");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<title>Write Yourself a Scheme in 48 hours</title>
+<link rel="stylesheet" href="/web/20140105123604cs_/http://jonathan.tang.name/files/scheme_in_48/tutorial/styles.css"/>
+</head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  <div style="position:relative;">
+    <div id="wm-logo" style="float:left;width:110px;padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="r" style="float:right;">
+      <div id="wm-btns" style="text-align:right;height:25px;">
+                  <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php"
+             title="Sign In"
+             id="wm-sign-in"
+          >
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        	<a href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share">
+          <a href="/web/20140105123604/http://web.archive.org/screenshot/http://jonathan.tang.name/files/scheme_in_48/tutorial/stdlib.html"
+             id="wm-screenshot"
+             title="screenshot">
+            <span class="wm-icon-screen-shot"></span>
+          </a>
+	<a id="wm-share-facebook" href="#" data-url="http://web.archive.org/web/20140105123604/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/stdlib.html" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="http://web.archive.org/web/20140105123604/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/stdlib.html" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+    </div>
+    <table class="c" style="">
+      <tbody>
+	<tr>
+	  <td class="u" colspan="2">
+	    <form target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://jonathan.tang.name/files/scheme_in_48/tutorial/stdlib.html" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20140105123604" /><input type="submit" value="Go" /></form>
+	  </td>
+	  <td class="n" rowspan="2" style="width:110px;">
+	    <table>
+	      <tbody>
+		<!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+		<tr class="m">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20131105112355/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/stdlib.html" title="05 Nov 2013"><strong>Nov</strong></a></td>
+		  <td class="c" id="displayMonthEl" title="You are here: 12:36:04 Jan 05, 2014">JAN</td>
+		  <td class="f" nowrap="nowrap">Feb</td>
+		</tr>
+		<!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+		<tr class="d">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20131105112355/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/stdlib.html" title="11:23:55 Nov 05, 2013"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+		  <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 12:36:04 Jan 05, 2014">05</td>
+		  <td class="f" nowrap="nowrap"><img src="/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+		</tr>
+		<!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+		<tr class="y">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20121119231716/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/stdlib.html" title="19 Nov 2012"><strong>2012</strong></a></td>
+		  <td class="c" id="displayYearEl" title="You are here: 12:36:04 Jan 05, 2014">2014</td>
+		  <td class="f" nowrap="nowrap">2015</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="s">
+	    	    <div id="wm-nav-captures">
+	      	      <a class="t" href="/web/20140105123604*/http://jonathan.tang.name/files/scheme_in_48/tutorial/stdlib.html" title="See a list of every capture for this URL">12 captures</a>
+	      <div class="r" title="Timespan for captures of this URL">05 Sep 2009 - 05 Jan 2014</div>
+	      </div>
+	  </td>
+	  <td class="k">
+	    <a href="" id="wm-graph-anchor">
+	      <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+		<canvas id="wm-sparkline-canvas" width="650" height="27" border="0"></canvas>
+	      </div>
+	    </a>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+      <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span style="font-size:80%">About this capture</span></a>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=http%3A//web.archive.org/web/20140105123604/http%3A//jonathan.tang.name/files/scheme_in_48/tutorial/stdlib.html"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(650,27,25,2,"web","http://jonathan.tang.name/files/scheme_in_48/tutorial/stdlib.html","20140105123604",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<h1 align="center">Write Yourself a Scheme in 48 Hours</h1>
+<h2 align="center">A Haskell Tutorial</h2>
+<h3 align="center">By Jonathan Tang</h3>
+<center><p><a href="/web/20140105123604/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.tgz">Download in .tar.gz format</a><br/>
+<a href="/web/20140105123604/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.zip">Download in .zip format</a></p></center>
+<h3>Contents</h3>
+<ol>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="firststeps.html">First Steps: Compiling and running</a></li>
+<li><a href="parser.html">Parsing</a></li>
+<ol>
+<li><a href="parser.html#symbols">A Simple Parser</a></li>
+<li><a href="parser.html#whitespace">Whitespace</a></li>
+<li><a href="parser.html#primitives">Literal Numbers and Strings: Return Values</a></li>
+<li><a href="parser.html#lists">Lists, Dotted Lists, and Quoted Data: Recursive Parsers</a></li>
+</ol>
+<li><a href="evaluator1.html">Evaluation, Part 1</a></li>
+<ol>
+<li><a href="evaluator1.html#show">Displaying Values: Show and Typeclasses</a></li>
+<li><a href="evaluator1.html#primitiveval">Evaluating Primitive Values: Pattern Matching</a></li>
+<li><a href="evaluator1.html#primitivefunc">Evaluating Primitive Functions: First-class Functions</a></li>
+</ol>
+<li><a href="errorcheck.html">Intermezzo: Error Checking &amp; Exceptions</a></li>
+<li><a href="evaluator2.html">Evaluation, Part 2</a></li>
+<ol>
+<li><a href="evaluator2.html#primitives">Additional Primitives: Partial Application</a></li>
+<li><a href="evaluator2.html#conditionals">Conditionals: Pattern Matching 2</a></li>
+<li><a href="evaluator2.html#lists">List Primitives: car, cdr, and cons</a></li>
+<li><a href="evaluator2.html#equal">Equal? and Weak Typing: Heterogenous Lists</a></li>
+</ol>
+<li><a href="repl.html">Building a REPL: Basic I/O</a></li>
+<li><a href="variables.html">Adding Variables and Assignment: Mutable State in Haskell</a></li>
+<li><a href="functions.html">Defining Scheme Functions: Closures and Environments</a></li>
+<li><a href="io.html">Creating IO Primitives: File I/O</a></li>
+<li>Towards a Standard Library: Fold and Unfold</li>
+<li><a href="conclusion.html">Conclusion &amp; Further Resources</a></li>
+</ol>
+<h3>11. Towards a Standard Library</h3>
+<p>
+Our Scheme is almost complete now, but it's still rather hard to use.  At the very least, we'd like a library of standard list-manipulation functions that we can use to perform some common computations.
+</p><p>
+Rather than using a typical Scheme implementation, defining each list function in terms of a recursion on lists, we'll implement two primitive recursion operators (<span class="inline_code">fold</span> and <span class="inline_code">unfold</span>) and then define our whole library based on those.  This style is used by the <a href="http://web.archive.org/web/20140105123604/http://www.haskell.org/onlinereport/standard-prelude.html">Haskell Prelude</a>: it gives you more concise definitions, less room for error, and good practice using fold to capture iteration.
+</p><p>
+We'll start by defining a few obvious helper functions.  <span class="inline_code">not</span> and <span class="inline_code">null</span> are defined exactly as you'd expect it, using if statements:
+<pre class="tutorial">
+(define (not x)            (if x #f #t))
+(define (null? obj)        (if (eqv? obj '()) #t #f))
+</pre>
+We can use the varargs feature to define list, which just returns a list of its arguments:
+<pre class="tutorial">
+(define (list . objs)       objs)
+</pre>
+
+We also want an <span class="inline_code">id</span> function, which just returns its argument unchanged.  This may seem completely useless - if you already have a value, why do you need a function to return it?  However, several of our algorithms expect a function that tells us what to do with a given value.  By defining <span class="inline_code">id</span>, we let those higher-order functions work even if we don't want to do <i>anything</i> with the value.
+<pre class="tutorial">
+(define (id obj)           obj)
+</pre>
+Similarly, it'd be nice to have a <span class="inline_code">flip</span> function, in case we want to pass in a function that takes its arguments in the wrong order:
+<pre class="tutorial">
+(define (flip func)        (lambda (arg1 arg2) (func arg2 arg1)))
+</pre>
+Finally, we add <span class="inline_code">curry</span> and <span class="inline_code">compose</span>, which work like their Haskell equivalents (partial-application and the dot operator, respectively).
+<pre class="tutorial">
+(define (curry func arg1)  (lambda (arg) (apply func (cons arg1 arg))))
+(define (compose f g)      (lambda (arg) (f (apply g arg))))
+</pre>
+We might as well define some simple library functions that appear in the Scheme standard:
+<pre class="tutorial">
+(define zero?              (curry = 0))
+(define positive?          (curry &lt; 0))
+(define negative?          (curry &gt; 0))
+(define (odd? num)         (= (mod num 2) 1))
+(define (even? num)        (= (mod num 2) 0))
+</pre>
+These are basically done just as you'd expect them.  Note the usage of curry to define zero?, positive? and negative?.  We bind the variable zero? to the function returned by curry, giving us an unary function that returns true if its argument is equal to zero.
+</p><p>
+Next, we want to define a fold function that captures the basic pattern of recursion over a list.  The best way to think about fold is to picture a list in terms of its infix constructors: <span class="inline_code">[1, 2, 3, 4] = 1:2:3:4:[]</span> in Haskell or <span class="inline_lisp">(1 . (2 . (3 . (4 . NIL))))</span> in Scheme.  A fold function replaces every constructor with a binary operation, and replaces NIL with the accumulator.  So, for example, (fold + 0 '(1 2 3 4)) = (1 + (2 + (3 + (4 + 0)))).  
+</p><p>
+With that definition, we can write our fold function.  Start with a right-associative version to mimic the above examples:
+<pre class="tutorial">
+(define (foldr func end lst)
+  (if (null? lst)
+      end
+      (func (car lst) (foldr func end (cdr lst)))))
+</pre>
+The structure of this function mimics our definition almost exactly.  If the list is null, replace it with the end value.  If not, apply the function to the car of the list and to the result of folding this function and end value down the rest of the list.  Since the right-hand operand is folded up first, you end up with a right-associative fold.
+</p><p>
+We also want a left-associative version.  For most associative operations like + and *, the two of them are completely equivalent.  However, there is at least one important binary operation that is <i>not</i> associative: cons.  For all our list manipulation functions, then, we'll need to deliberately choose between left- and right-associative folds.
+<pre class="tutorial">
+(define (foldl func accum lst)
+  (if (null? lst)
+      accum
+      (foldl func (func accum (car lst)) (cdr lst))))
+</pre>
+This begins the same way as the right-associative version, with the test for null that returns the accumulator.  This time, however, we apply the function to the accumulator and first element of the list, instead of applying it to the first element and the result of folding the list.  This means that we process the beginning first, giving us left-associativity.  Once we reach the end of the list, '(), we then return the result that we've been progressively building up.  
+</p><p>
+Note that func takes its arguments in the opposite order from foldr.  In foldr, the accumulator represents the <i>rightmost</i> value to tack onto the end of the list, after you've finished recursing down it.  In foldl, it represents the completed calculation for the <i>leftmost</i> part of the list.  In order to preserve our intuitions about commutativity of operators, it should therefore be the left argument of our operation in foldl, but the right argument in foldr.
+</p><p>
+Once we've got our basic folds, we can define a couple convenience names to match typical Scheme usage:
+<pre class="tutorial">
+(define fold foldl)
+(define reduce fold)
+</pre>
+These are just new variables bound to the existing functions: they don't define new functions.  Most Schemes call fold "reduce" or plain old "fold", and don't make the distinction between foldl and foldr.  We define it to be foldl, which happens to be tail-recursive and hence runs more efficiently than foldr (it doesn't have to recurse all the way down to the end of the list before it starts building up the computation).  Not all operations are associative, however; we'll see some cases later where we <i>have</i> to use foldr to get the right result.
+</p><p>
+Next, we want to define a function that is the opposite of fold.  Given an unary function, an initial value, and a unary predicate, it continues applying the function to the last value until the predicate is true, building up a list as it goes along.  This is essentially what generators are in Python or Icon:
+<pre class="tutorial">
+(define (unfold func init pred)
+  (if (pred init)
+      (cons init '())
+      (cons init (unfold func (func init) pred))))
+</pre>
+As usual, our function structure basically matches the definition.  If the predicate is true, then we cons a '() onto the last value, terminating the list.  Otherwise, cons the result of unfolding the next value (func init) onto the current value.
+</p><p>
+In academic functional programming literature, folds are often called <i>catamorphisms</i>, unfolds are often called <i>anamorphisms</i>, and the combinations of the two are often called <i>hylomorphisms</i>.  They're interesting because <i>any for-each loop can be represented as a catamorphism</i>.  To convert from a loop to a foldl, package up all mutable variables in the loop into a data structure (records work well for this, but you can also use an algebraic data type or a list).  The initial state becomes the accumulator; the loop body becomes a function with the loop variables as its first argument and the iteration variable as its second; and the list becomes, well, the list.  The result of the fold function is the new state of all the mutable variables.
+</p><p>
+Similarly, <i>every for-loop (without early exits) can be represented as a hylomorphism</i>.  The initialization, termination, and step conditions of a for-loop define an anamorphism that builds up a list of values for the iteration variable to take.  Then, you can treat that as a for-each loop and use a catamorphism to break it down into whatever state you wish to modify.
+</p><p>
+Let's go through a couple examples.  We'll start with typical sum/product/and/or functions:
+<pre class="tutorial">
+(define (sum . lst)         (fold + 0 lst))
+(define (product . lst)     (fold * 1 lst))
+(define (and . lst)         (fold &amp;&amp; #t lst))
+(define (or . lst)          (fold || #f lst))
+</pre>
+These all follow from the definitions:<span class="inline_lisp"><ul>
+<li>(sum 1 2 3 4) = 1 + 2 + 3 + 4 + 0 = (fold + 0 '(1 . (2 . (3 . (4 . NIL)))))</li>
+<li>(product 1 2 3 4) = 1 * 2 * 3 * 4 * 1 = (fold * 1 '(1 . (2 . (3 . (4 . NIL)))))</li>
+<li>(and #t #t #f) = #t &amp;&amp; #t &amp;&amp; #f &amp;&amp; #t = (fold &amp;&amp; #t '(#t . (#t . (#f . NIL))))</li>
+<li>(or #t #t #f) = #t || #t || #f || #f = (fold  || #f '(#t . (#t . (#f . NIL))))</li>
+</ul></span>
+Since all of these operators are associative, it doesn't matter whether we use foldr or foldl.  We replace the cons constructor with the operator, and the nil constructor with the identity element for that operator.
+</p><p>
+Next, let's try some more complicated operators.  Max and min find the maximum and minimum of their arguments, respectively:
+<pre class="tutorial">
+(define (max first . num-list) (fold (lambda (old new) (if (&gt; old new) old new)) first num-list))
+(define (min first . num-list) (fold (lambda (old new) (if (&lt; old new) old new)) first num-list))
+</pre>
+It's not immediately obvious what operation to fold over the list, because none of the built-ins quite qualify.  Instead, think back to fold as a representation of a foreach loop.  The accumulator represents any state we've maintained over previous iterations of the loop, so we'll want it to be the maximum value we've found so far.  That gives us our initialization value: we want to start off with the leftmost variable in the list (since we're doing a foldl).  Now recall that the result of the operation becomes the new accumulator at each step, and we've got our function.  If the previous value is greater, keep it.  If the new value is greater, or they're equal, return the new value.  Reverse the operation for <span class="inline_code">min</span>.
+</p><p>
+How about <span class="inline_code">length</span>?  We know that we can find the length of a list by counting down it, but how do we translate that into a fold?
+<pre class="tutorial">
+(define (length lst)        (fold (lambda (x y) (+ x 1)) 0 lst))
+</pre>
+Again, think in terms of its definition as a loop.  The accumulator starts off at 0 and gets incremented by 1 with each iteration.  That gives us both our initialization value - 0 - and our function - <span class="inline_code">(lambda (x y) (+ x 1))</span>.  Another way to look at this is "The length of a list is 1 + the length of the sublist to its left".
+</p><p>
+Let's try something a bit trickier: <span class="inline_code">reverse</span>.
+<pre class="tutorial">
+(define (reverse lst)       (fold (flip cons) '() lst))
+</pre>
+The function here is fairly obvious: if you want to reverse two cons cells, you can just flip cons so it takes its arguments in the opposite order.  However, there's a bit of subtlety at work.  Ordinary lists are <i>right</i> associative: <span class="inline_lisp">(1 2 3 4) = (1 . (2 . (3 . (4 . NIL))))</span>.  If you want to reverse this, you need your fold to be <i>left</i> associative: <span class="inline_lisp">(reverse '(1 2 3 4)) = (4 . (3 . (2 . (1 . NIL))))</span>.  Try it with a foldr instead of a foldl and see what you get.
+</p><p>
+There's a whole family of member and assoc functions, all of which can be represented with folds.  The particular lambda expression is fairly complicated though, so let's factor it out:
+<pre class="tutorial">
+(define (mem-helper pred op) (lambda (acc next) (if (and (not acc) (pred (op next))) next acc)))
+(define (memq obj lst)       (fold (mem-helper (curry eq? obj) id) #f lst))
+(define (memv obj lst)       (fold (mem-helper (curry eqv? obj) id) #f lst))
+(define (member obj lst)     (fold (mem-helper (curry equal? obj) id) #f lst))
+(define (assq obj alist)     (fold (mem-helper (curry eq? obj) car) #f alist))
+(define (assv obj alist)     (fold (mem-helper (curry eqv? obj) car) #f alist))
+(define (assoc obj alist)    (fold (mem-helper (curry equal? obj) car) #f alist))
+</pre>
+The helper function is parameterized by the predicate to use and the operation to apply to the result if found.  Its accumulator represents the first value found so far: it starts out with #f and takes on the first value that satisfies its predicate.  We avoid finding subsequent values by testing for a non-#f value and returning the existing accumulator if it's already set.  We also provide an operation that will be applied to the next value each time the predicate tests: this lets us customize mem-helper to check the value itself (for member) or only the key of the value (for assoc).
+</p><p>
+The rest of the functions are just various combinations of eq?/eqv?/equal? and id/car, folded over the list with an initial value of #f.
+</p><p>
+Next, let's define the functions <span class="inline_code">map</span> and <span class="inline_code">filter</span>.  Map applies a function to every element of a list, returning a new list with the transformed values:
+<pre class="tutorial">
+(define (map func lst)      (foldr (lambda (x y) (cons (func x) y)) '() lst))
+</pre>
+Remember that foldr's function takes its arguments in the opposite order as fold, with the current value on the left.  Map's lambda applies the function to the current value, then conses it with the rest of the mapped list, represented by the right-hand argument.  It's essentially replacing every infix cons constructor with one that conses, but also applies the function to its left-side argument.
+</p><p>
+<span class="inline_code">filter</span> keeps only the elements of a list that satisfy a predicate, dropping all others:
+<pre class="tutorial">
+(define (filter pred lst)   (foldr (lambda (x y) (if (pred x) (cons x y) y)) '() lst))
+</pre>
+This works by testing the current value against the predicate.  If it's true, replacing cons with cons, i.e. don't do anything.  If it's false, drop the cons and just return the rest of the list.  This eliminates all the elements that don't satisfy the predicate, consing up a new list that includes only the ones that do.
+</p><p>
+We can use the standard library by starting up our Lisp interpreter and typing <span class="inline_lisp">(load "stdlib.scm")</span>:
+<pre class="console">
+jdtang@debian:~/haskell_tutorial/code$ ./lisp
+Lisp&gt;&gt;&gt; (load "stdlib.scm")
+(lambda ("pred" . lst) ...)
+Lisp&gt;&gt;&gt; (map (curry + 2) '(1 2 3 4))
+(3 4 5 6)
+Lisp&gt;&gt;&gt; (filter even? '(1 2 3 4))
+(2 4)
+Lisp&gt;&gt;&gt; quit
+</pre>
+</p><p>
+There are many other useful functions that could go into the standard library, including list-tail, list-ref, append, and various string-manipulation functions.  Try implementing them as folds.  Remember, the key to successful fold-programming is thinking only in terms of what happens on each iteration.  Fold captures the pattern of recursion down a list, and recursive problems are best solved by working one step at a time.
+</p>
+<div align="right">
+<a href="conclusion.html">Next: Conclusion</a>
+</div>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 12:36:04 Jan 05, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:43:42 Jan 11, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 143.442
+  exclusion.robots: 0.157
+  exclusion.robots.policy: 0.15
+  RedisCDXSource: 2.513
+  esindex: 0.008
+  LoadShardBlock: 118.049 (3)
+  PetaboxLoader3.datanode: 75.547 (4)
+  CDXLines.iter: 20.07 (3)
+  load_resource: 77.609
+  PetaboxLoader3.resolve: 34.114
+-->

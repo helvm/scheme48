@@ -1,0 +1,343 @@
+<html>
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app204.us.archive.org';v.server_ms=1530;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=SOX25l-I" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://jonathan.tang.name:80/files/scheme_in_48/tutorial/io.html","20131231023530","http://web.archive.org/","web","/_static/",
+	      "1388457330");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<title>Write Yourself a Scheme in 48 hours</title>
+<link rel="stylesheet" href="/web/20131231023530cs_/http://jonathan.tang.name/files/scheme_in_48/tutorial/styles.css"/>
+</head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  <div style="position:relative;">
+    <div id="wm-logo" style="float:left;width:110px;padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="r" style="float:right;">
+      <div id="wm-btns" style="text-align:right;height:25px;">
+                  <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php"
+             title="Sign In"
+             id="wm-sign-in"
+          >
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        	<a href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share">
+          <a href="/web/20131231023530/http://web.archive.org/screenshot/http://jonathan.tang.name/files/scheme_in_48/tutorial/io.html"
+             id="wm-screenshot"
+             title="screenshot">
+            <span class="wm-icon-screen-shot"></span>
+          </a>
+	<a id="wm-share-facebook" href="#" data-url="http://web.archive.org/web/20131231023530/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/io.html" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="http://web.archive.org/web/20131231023530/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/io.html" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+    </div>
+    <table class="c" style="">
+      <tbody>
+	<tr>
+	  <td class="u" colspan="2">
+	    <form target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://jonathan.tang.name/files/scheme_in_48/tutorial/io.html" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20131231023530" /><input type="submit" value="Go" /></form>
+	  </td>
+	  <td class="n" rowspan="2" style="width:110px;">
+	    <table>
+	      <tbody>
+		<!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+		<tr class="m">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20131031084836/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/io.html" title="31 Oct 2013"><strong>Oct</strong></a></td>
+		  <td class="c" id="displayMonthEl" title="You are here: 02:35:30 Dec 31, 2013">DEC</td>
+		  <td class="f" nowrap="nowrap">Jan</td>
+		</tr>
+		<!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+		<tr class="d">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20131031084836/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/io.html" title="08:48:36 Oct 31, 2013"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+		  <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 02:35:30 Dec 31, 2013">31</td>
+		  <td class="f" nowrap="nowrap"><img src="/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+		</tr>
+		<!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+		<tr class="y">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20121122003346/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/io.html" title="22 Nov 2012"><strong>2012</strong></a></td>
+		  <td class="c" id="displayYearEl" title="You are here: 02:35:30 Dec 31, 2013">2013</td>
+		  <td class="f" nowrap="nowrap">2014</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="s">
+	    	    <div id="wm-nav-captures">
+	      	      <a class="t" href="/web/20131231023530*/http://jonathan.tang.name/files/scheme_in_48/tutorial/io.html" title="See a list of every capture for this URL">18 captures</a>
+	      <div class="r" title="Timespan for captures of this URL">05 Sep 2009 - 31 Dec 2013</div>
+	      </div>
+	  </td>
+	  <td class="k">
+	    <a href="" id="wm-graph-anchor">
+	      <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+		<canvas id="wm-sparkline-canvas" width="650" height="27" border="0"></canvas>
+	      </div>
+	    </a>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+      <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span style="font-size:80%">About this capture</span></a>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=http%3A//web.archive.org/web/20131231023530/http%3A//jonathan.tang.name/files/scheme_in_48/tutorial/io.html"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(650,27,25,2,"web","http://jonathan.tang.name/files/scheme_in_48/tutorial/io.html","20131231023530",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<h1 align="center">Write Yourself a Scheme in 48 Hours</h1>
+<h2 align="center">A Haskell Tutorial</h2>
+<h3 align="center">By Jonathan Tang</h3>
+<center><p><a href="/web/20131231023530/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.tgz">Download in .tar.gz format</a><br/>
+<a href="/web/20131231023530/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.zip">Download in .zip format</a></p></center>
+<h3>Contents</h3>
+<ol>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="firststeps.html">First Steps: Compiling and running</a></li>
+<li><a href="parser.html">Parsing</a></li>
+<ol>
+<li><a href="parser.html#symbols">A Simple Parser</a></li>
+<li><a href="parser.html#whitespace">Whitespace</a></li>
+<li><a href="parser.html#primitives">Literal Numbers and Strings: Return Values</a></li>
+<li><a href="parser.html#lists">Lists, Dotted Lists, and Quoted Data: Recursive Parsers</a></li>
+</ol>
+<li><a href="evaluator1.html">Evaluation, Part 1</a></li>
+<ol>
+<li><a href="evaluator1.html#show">Displaying Values: Show and Typeclasses</a></li>
+<li><a href="evaluator1.html#primitiveval">Evaluating Primitive Values: Pattern Matching</a></li>
+<li><a href="evaluator1.html#primitivefunc">Evaluating Primitive Functions: First-class Functions</a></li>
+</ol>
+<li><a href="errorcheck.html">Intermezzo: Error Checking &amp; Exceptions</a></li>
+<li><a href="evaluator2.html">Evaluation, Part 2</a></li>
+<ol>
+<li><a href="evaluator2.html#primitives">Additional Primitives: Partial Application</a></li>
+<li><a href="evaluator2.html#conditionals">Conditionals: Pattern Matching 2</a></li>
+<li><a href="evaluator2.html#lists">List Primitives: car, cdr, and cons</a></li>
+<li><a href="evaluator2.html#equal">Equal? and Weak Typing: Heterogenous Lists</a></li>
+</ol>
+<li><a href="repl.html">Building a REPL: Basic I/O</a></li>
+<li><a href="variables.html">Adding Variables and Assignment: Mutable State in Haskell</a></li>
+<li><a href="functions.html">Defining Scheme Functions: Closures and Environments</a></li>
+<li>Creating IO Primitives: File I/O</li>
+<li><a href="stdlib.html">Towards a Standard Library: Fold and Unfold</a></li>
+<li><a href="conclusion.html">Conclusion &amp; Further Resources</a></li>
+</ol>
+<h3>10. Creating IO primitives</h3>
+<p>
+Our Scheme can't really communicate with the outside world yet, so it would be nice if we could give it some I/O functions.  Also, it gets really tedious typing in functions every time we start the interpreter, so it would be nice to load files of code and execute them. 
+</p><p>
+The first thing we'll need is a new constructor for LispVals.  PrimitiveFuncs have a specific type signature that doesn't include the IO monad, so they can't perform any IO.  We want a dedicated constructor for primitive functions that perform IO:
+<pre class="tutorial">
+             | IOFunc ([LispVal] -&gt; IOThrowsError LispVal)
+</pre>
+While we're at it, let's also define a constructor for the Scheme data type of a <a href="http://web.archive.org/web/20131231023530/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.6.1">port</a>.  Most of our IO functions will take one of these to read from or write to:
+<pre class="tutorial">
+             | Port Handle
+</pre>
+A <a href="http://web.archive.org/web/20131231023530/http://www.haskell.org/onlinereport/io.html#sect21">Handle</a> is basically the Haskell notion of a port: it's an opaque data type, returned from openFile and similar IO actions, that you can read and write to.
+</p><p>
+For completeness, we ought to provide showVal methods for the new data types:
+<pre class="tutorial">
+showVal (Port _) = "&lt;IO port&gt;"
+showVal (IOFunc _) = "&lt;IO primitive&gt;"
+</pre>
+This'll let the REPL function properly and not crash when you use a function that returns a port.
+</p><p>
+We'll need to make some minor changes to our parser to support <a href="http://web.archive.org/web/20131231023530/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.6.4">load</a>.  Since Scheme files usually contain several definitions, we need to add a parser that will support several expressions, separated by whitespace.  And it also needs to handle errors.  We can re-use much of the existing infrastructure by factoring our basic readExpr so that it takes the actual parser as a parameter:
+<pre class="tutorial">
+<span class="changed_code">readOrThrow :: Parser a -&gt;</span> String -&gt; ThrowsError a
+<span class="changed_code">readOrThrow parser</span> input = case parse <span class="changed_code">parser</span> "lisp" input of
+    Left err -&gt; throwError $ Parser err
+    Right val -&gt; return val
+
+<span class="changed_code">
+readExpr = readOrThrow parseExpr
+readExprList = readOrThrow (endBy parseExpr spaces)
+</span>
+</pre>
+Again, think of both readExpr and readExprList as specializations of the newly-renamed readOrThrow.  We'll be using readExpr in our REPL to read single expressions; we'll be using readExprList from within load to read programs.
+</p><p>
+Next, we'll want a new list of IO primitives, structured just like the existing primitive list:
+<pre class="tutorial">
+ioPrimitives :: [(String, [LispVal] -&gt; IOThrowsError LispVal)]
+ioPrimitives = [("apply", applyProc),
+                ("open-input-file", makePort ReadMode),
+                ("open-output-file", makePort WriteMode),
+                ("close-input-port", closePort),
+                ("close-output-port", closePort),
+                ("read", readProc),
+                ("write", writeProc),
+                ("read-contents", readContents),
+                ("read-all", readAll)]
+</pre>
+The only difference here is in the type signature.  Unfortunately, we can't use the existing primitive list because lists cannot contain elements of different types.  We also need to change the definition of primitiveBindings to add our new primitives:
+<pre class="tutorial">
+primitiveBindings :: IO Env
+primitiveBindings = nullEnv &gt;&gt;= (flip bindVars $ <span class="changed_code">map (makeFunc IOFunc) ioPrimitives
+                                              ++ </span>map (makeFunc PrimitiveFunc) primitives)
+    where makeFunc <span class="changed_code">constructor</span> (var, func) = (var, <span class="changed_code">constructor</span> func)
+</pre>
+We've generalized makeFunc to take a constructor argument, and now call it on the list of ioPrimitives in addition to the plain old primitives.
+</p><p>
+Now we start defining the actual functions.  applyProc is a very thin wrapper around apply, responsible for destructuring the argument list into the form apply expects:
+<pre class="tutorial">
+applyProc :: [LispVal] -&gt; IOThrowsError LispVal
+applyProc [func, List args] = apply func args
+applyProc (func : args) = apply func args
+</pre>
+makePort wraps the Haskell function openFile, converting it to the right type and wrapping its return value in the Port constructor.  It's intended to be partially-applied to the IOMode, ReadMode for open-input-file and WriteMode for open-output-file:
+<pre class="tutorial">
+makePort :: IOMode -&gt; [LispVal] -&gt; IOThrowsError LispVal
+makePort mode [String filename] = liftM Port $ liftIO $ openFile filename mode
+</pre>
+closePort also wraps the equivalent Haskell procedure, this time hClose:
+<pre class="tutorial">
+closePort :: [LispVal] -&gt; IOThrowsError LispVal
+closePort [Port port] = liftIO $ hClose port &gt;&gt; (return $ Bool True)
+closePort _ = return $ Bool False
+</pre>
+readProc (named to avoid a name conflict with the built-in read) wraps the Haskell hGetLine and then sends the result to parseExpr, to be turned into a LispVal suitable for Scheme:
+<pre class="tutorial">
+readProc :: [LispVal] -&gt; IOThrowsError LispVal
+readProc [] = readProc [Port stdin]
+readProc [Port port] = (liftIO $ hGetLine stdin) &gt;&gt;= liftThrows . readExpr
+</pre>
+Notice how hGetLine is of type <span class="inline_code">IO String</span> yet readExpr is of type <span class="inline_code">String -&gt; ThrowsError LispVal</span>, so they both need to be converted (with liftIO and liftThrows, respectively) to the IOThrowsError monad.  Only then can they be piped together with the monadic bind operator.
+</p><p>
+writeProc converts a LispVal to a string and then writes it out on the specified port:
+<pre class="tutorial">
+writeProc :: [LispVal] -&gt; IOThrowsError LispVal
+writeProc [obj] = writeProc [obj, Port stdout]
+writeProc [obj, Port port] = liftIO $ hPrint port obj &gt;&gt; (return $ Bool True)
+</pre>
+We don't have to explicitly call show on the object we're printing, because hPrint takes a value of type Show a.  It's calling show for us automatically.  This is why we bothered making LispVal an instance of Show; otherwise, we wouldn't be able to use this automatic conversion and would have to call showVal ourselves.  Many other Haskell functions also take instances of Show, so if we'd extended this with other IO primitives, it could save us significant labor.
+</p><p>
+readContents reads the whole file into a string in memory.  It's a thin wrapper around Haskell's readFile, again just lifting the IO action into an IOThrowsError action and wrapping it in a String constructor:
+<pre class="tutorial">
+readContents :: [LispVal] -&gt; IOThrowsError LispVal
+readContents [String filename] = liftM String $ liftIO $ readFile filename
+</pre>
+The helper function "load" doesn't do what Scheme's load does (we handle that later).  Rather, it's responsible only for reading and parsing a file full of statements.  It's used in two places: readAll (which returns a list of values) and load (which evaluates those values as Scheme expressions).
+<pre class="tutorial">
+load :: String -&gt; IOThrowsError [LispVal]
+load filename = (liftIO $ readFile filename) &gt;&gt;= liftThrows . readExprList
+</pre>
+readAll then just wraps that return value with the List constructor:
+<pre class="tutorial">
+readAll :: [LispVal] -&gt; IOThrowsError LispVal
+readAll [String filename] = liftM List $ load filename
+</pre>
+</p><p>
+Implementing the actual Scheme load function is a little tricky, because load can introduce bindings into the local environment.  Apply, however, doesn't take an environment argument, and so there's no way for a primitive function (or any function) to do this.  We get around this by implementing load as a special form:
+<pre class="tutorial">
+eval env (List [Atom "load", String filename]) = 
+    load filename &gt;&gt;= liftM last . mapM (eval env)
+</pre>
+Finally, we might as well change our runOne function so that instead of evaluating a single expression from the command line, it takes the name of a file to execute and runs that as a program.  Additional command-line arguments will get bound into a list "args" within the Scheme program:
+<pre class="tutorial">
+runOne :: [String] -&gt; IO ()
+runOne args = do
+    env &lt;- primitiveBindings &gt;&gt;= flip bindVars [("args", List $ map String $ drop 1 args)] 
+    (runIOThrows $ liftM show $ eval env (List [Atom "load", String (args !! 0)])) 
+         &gt;&gt;= hPutStrLn stderr
+</pre>
+That's a little involved, so let's go through it step-by-step.  The first line takes the original primitive bindings, passes that into bindVars, and then adds a variable named "args" that's bound to a List containing String versions of all but the first argument.  (The first argument is the filename to execute.)  Then, it creates a Scheme form (load "arg1"), just as if the user had typed it in, and evaluates it.  The result is transformed to a string (remember, we have to do this before catching errors, because the error handler converts them to strings and the types must match) and then we run the whole IOThrowsError action.  Then we print the result on STDERR.   (Traditional UNIX conventions hold that STDOUT should be used only or program output, with any error messages going to stderr.  In this case, we'll also be printing the return value of the last statement in the program, which generally has no meaning to anything.)
+</p><p>
+Then we change main so it uses our new runOne function.  Since we no longer need a third clause to handle the wrong number of command-line arguments, we can simplify it to an if statement:
+<pre class="tutorial">
+main :: IO ()
+main = do args &lt;- getArgs
+          if null args then runRepl else runOne $ args
+</pre>
+</p>
+<div align="right">
+<a href="stdlib.html">Next: Towards a Standard Library</a>
+</div>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 02:35:30 Dec 31, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:43:00 Jan 11, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 391.017
+  exclusion.robots: 0.241
+  exclusion.robots.policy: 0.231
+  RedisCDXSource: 2.465
+  esindex: 0.012
+  LoadShardBlock: 362.923 (3)
+  PetaboxLoader3.datanode: 313.395 (7)
+  PetaboxLoader3.resolve: 1126.768 (3)
+  CDXLines.iter: 17.61 (2)
+  load_resource: 1134.799
+-->

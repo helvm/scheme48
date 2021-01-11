@@ -1,0 +1,470 @@
+<html>
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=259;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=SOX25l-I" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://jonathan.tang.name:80/files/scheme_in_48/tutorial/evaluator2.html","20130714045457","http://web.archive.org/","web","/_static/",
+	      "1373777697");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<title>Write Yourself a Scheme in 48 hours</title>
+<link rel="stylesheet" href="/web/20130714045457cs_/http://jonathan.tang.name/files/scheme_in_48/tutorial/styles.css"/>
+</head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  <div style="position:relative;">
+    <div id="wm-logo" style="float:left;width:110px;padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="r" style="float:right;">
+      <div id="wm-btns" style="text-align:right;height:25px;">
+                  <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php"
+             title="Sign In"
+             id="wm-sign-in"
+          >
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        	<a href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share">
+          <a href="/web/20130714045457/http://web.archive.org/screenshot/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html"
+             id="wm-screenshot"
+             title="screenshot">
+            <span class="wm-icon-screen-shot"></span>
+          </a>
+	<a id="wm-share-facebook" href="#" data-url="http://web.archive.org/web/20130714045457/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/evaluator2.html" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="http://web.archive.org/web/20130714045457/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/evaluator2.html" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+    </div>
+    <table class="c" style="">
+      <tbody>
+	<tr>
+	  <td class="u" colspan="2">
+	    <form target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130714045457" /><input type="submit" value="Go" /></form>
+	  </td>
+	  <td class="n" rowspan="2" style="width:110px;">
+	    <table>
+	      <tbody>
+		<!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+		<tr class="m">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20130222025008/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/evaluator2.html" title="22 Feb 2013"><strong>Feb</strong></a></td>
+		  <td class="c" id="displayMonthEl" title="You are here: 04:54:57 Jul 14, 2013">JUL</td>
+		  <td class="f" nowrap="nowrap">Aug</td>
+		</tr>
+		<!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+		<tr class="d">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20130222025008/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/evaluator2.html" title="02:50:08 Feb 22, 2013"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+		  <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 04:54:57 Jul 14, 2013">14</td>
+		  <td class="f" nowrap="nowrap"><img src="/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+		</tr>
+		<!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+		<tr class="y">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20120403011550/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html" title="03 Apr 2012"><strong>2012</strong></a></td>
+		  <td class="c" id="displayYearEl" title="You are here: 04:54:57 Jul 14, 2013">2013</td>
+		  <td class="f" nowrap="nowrap">2014</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="s">
+	    	    <div id="wm-nav-captures">
+	      	      <a class="t" href="/web/20130714045457*/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html" title="See a list of every capture for this URL">14 captures</a>
+	      <div class="r" title="Timespan for captures of this URL">04 Sep 2009 - 14 Jul 2013</div>
+	      </div>
+	  </td>
+	  <td class="k">
+	    <a href="" id="wm-graph-anchor">
+	      <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+		<canvas id="wm-sparkline-canvas" width="650" height="27" border="0"></canvas>
+	      </div>
+	    </a>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+      <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span style="font-size:80%">About this capture</span></a>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=http%3A//web.archive.org/web/20130714045457/http%3A//jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(650,27,25,2,"web","http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html","20130714045457",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<h1 align="center">Write Yourself a Scheme in 48 Hours</h1>
+<h2 align="center">A Haskell Tutorial</h2>
+<h3 align="center">By Jonathan Tang</h3>
+<center><p><a href="/web/20130714045457/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.tgz">Download in .tar.gz format</a><br/>
+<a href="/web/20130714045457/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.zip">Download in .zip format</a></p></center>
+<h3>Contents</h3>
+<ol>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="firststeps.html">First Steps: Compiling and running</a></li>
+<li><a href="parser.html">Parsing</a></li>
+<ol>
+<li><a href="parser.html#symbols">A Simple Parser</a></li>
+<li><a href="parser.html#whitespace">Whitespace</a></li>
+<li><a href="parser.html#primitives">Literal Numbers and Strings: Return Values</a></li>
+<li><a href="parser.html#lists">Lists, Dotted Lists, and Quoted Data: Recursive Parsers</a></li>
+</ol>
+<li><a href="evaluator1.html">Evaluation, Part 1</a></li>
+<ol>
+<li><a href="evaluator1.html#show">Displaying Values: Show and Typeclasses</a></li>
+<li><a href="evaluator1.html#primitiveval">Evaluating Primitive Values: Pattern Matching</a></li>
+<li><a href="evaluator1.html#primitivefunc">Evaluating Primitive Functions: First-class Functions</a></li>
+</ol>
+<li><a href="errorcheck.html">Intermezzo: Error Checking &amp; Exceptions</a></li>
+<li><a href="evaluator2.html">Evaluation, Part 2</a></li>
+<ol>
+<li><a href="evaluator2.html#primitives">Additional Primitives: Partial Application</a></li>
+<li><a href="evaluator2.html#conditionals">Conditionals: Pattern Matching 2</a></li>
+<li><a href="evaluator2.html#lists">List Primitives: car, cdr, and cons</a></li>
+<li><a href="evaluator2.html#equal">Equal? and Weak Typing: Heterogenous Lists</a></li>
+</ol>
+<li><a href="repl.html">Building a REPL: Basic I/O</a></li>
+<li><a href="variables.html">Adding Variables and Assignment: Mutable State in Haskell</a></li>
+<li><a href="functions.html">Defining Scheme Functions: Closures and Environments</a></li>
+<li><a href="io.html">Creating IO Primitives: File I/O</a></li>
+<li><a href="stdlib.html">Towards a Standard Library: Fold and Unfold</a></li>
+<li><a href="conclusion.html">Conclusion &amp; Further Resources</a></li>
+</ol>
+<a name="conditionals"/>
+<h3>6.1 Additional Primitives: Partial Application</h3>
+<p>
+Now that we can deal with type errors, bad arguments, and so on, we'll flesh out our primitive list so that it does something more than calculate.  We'll add boolean operators, conditionals, and some basic string operations.
+</p><p>
+Start by adding the following into the list of primitives:
+<pre class="tutorial">
+              ("=", numBoolBinop (==)),
+              ("&lt;", numBoolBinop (&lt;)),
+              ("&gt;", numBoolBinop (&gt;)),
+              ("/=", numBoolBinop (/=)),
+              ("&gt;=", numBoolBinop (&gt;=)),
+              ("&lt;=", numBoolBinop (&lt;=)),
+              ("&amp;&amp;", boolBoolBinop (&amp;&amp;)),
+              ("||", boolBoolBinop (||)),
+              ("string=?", strBoolBinop (==)),
+              ("string<?", strBoolBinop (<)),
+              ("string>?", strBoolBinop (&gt;)),
+              ("string&lt;=?", strBoolBinop (&lt;=)),
+              ("string&gt;=?", strBoolBinop (&gt;=)),
+
+</pre>
+These depend on helper functions that we haven't written yet: <span class="inline_code">numBoolBinop</span> and <span class="inline_code">strBoolBinop</span>.  Instead of taking a variable number of arguments and returning an integer, these both take exactly 2 arguments and return a boolean.  They differ from each other only in the type of argument they expect, so let's factor the duplication into a generic <span class="inline_code">boolBinop</span> function that's parameteried by the unpacker function it applies to its arguments:
+<pre class="tutorial">
+boolBinop :: (LispVal -&gt; ThrowsError a) -&gt; (a -&gt; a -&gt; Bool) -&gt; [LispVal] -&gt; ThrowsError LispVal
+boolBinop unpacker op args = if length args /= 2 
+                             then throwError $ NumArgs 2 args
+                             else do left &lt;- unpacker $ args !! 0
+                                     right &lt;- unpacker $ args !! 1
+                                     return $ Bool $ left `op` right
+</pre>
+Because each arg may throw a type mismatch, we have to unpack them sequentially, in a do-block (for the Error monad).  We then apply the operation to the two arguments and wrap the result in the Bool constructor.  Any function can be turned into an infix operator by wrapping it in backticks (<span class="inline_code">`op`</span>).
+</p><p>
+Also, take a look at the type signature.  <span class="inline_code">boolBinop</span> takes <i>two</i> functions as its first two arguments: the first is used to unpack the arguments from LispVals to native Haskell types, and the second is the actual operation to perform.  By parameterizing different parts of the behavior, you make the function more reusable.
+</p><p>
+Now we define three functions that specialize boolBinop with different unpackers:
+<pre class="tutorial">
+numBoolBinop = boolBinop unpackNum
+strBoolBinop = boolBinop unpackStr
+boolBoolBinop = boolBinop unpackBool
+</pre>
+We haven't told Haskell how to unpack strings from LispVals yet.  This works similarly to unpackNum, pattern matching against the value and either returning it or throwing an error.  Again, if passed a primitive value that could be interpreted as a string (such as a number or boolean), it will silently convert it to the string representation.
+<pre class="tutorial">
+unpackStr :: LispVal -&gt; ThrowsError String
+unpackStr (String s) = return s
+unpackStr (Number s) = return $ show s
+unpackStr (Bool s) = return $ show s
+unpackStr notString = throwError $ TypeMismatch "string" notString
+</pre>
+And we use similar code to unpack booleans:
+<pre class="tutorial">
+unpackBool :: LispVal -&gt; ThrowsError Bool
+unpackBool (Bool b) = return b
+unpackBool notBool = throwError $ TypeMismatch "boolean" notBool
+</pre>
+Let's compile and test this to make sure it's working, before we proceed to the next feature:
+<pre class="console">
+debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href="/web/20130714045457/http://jonathan.tang.name/files/scheme_in_48/code/listing6.1.hs">listing6.1.hs</a>
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(&lt; 2 3)"
+#t
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(&gt; 2 3)"
+#f
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(&gt;= 3 3)"
+#t
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(string=? \"test\"  \"test\")"
+#t
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(string&lt;? \"abc\" \"bba\")"
+#t
+</pre>
+</p>
+<a name="conditionals"/>
+<h3>6.2 Conditionals: Pattern Matching 2</h3>
+<p>
+Now, we'll proceed to adding an if-clause to our evaluator.  As with standard Scheme, our evaluator considers #f to be false and any other value to be true:
+<pre class="tutorial">
+eval (List [Atom "if", pred, conseq, alt]) = 
+    do result &lt;- eval pred
+       case result of
+         Bool False -&gt; eval alt
+         otherwise -&gt; eval conseq
+</pre>
+This is another example of nested pattern-matching.  Here, we're looking for a 4-element list.  The first element must be the atom "if".  The others can be any Scheme forms.  We take the first element, evaluate, and if it's false, evaluate the alternative.  Otherwise, we evaluate the consequent.
+</p><p>
+Compile and run this, and you'll be able to play around with conditionals:
+<pre class="console">
+debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href="/web/20130714045457/http://jonathan.tang.name/files/scheme_in_48/code/listing6.2.hs">listing6.2.hs</a>
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(if (&gt; 2 3) \"no\" \"yes\")"
+"yes"
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(if (= 3 3) (+ 2 3 (- 5 1)) \"unequal\")"
+9
+</pre>
+</p>
+<a name="lists">
+<h3>6.3 List Primitives: car, cdr, and cons</h3>
+<p>
+For good measure, lets also add in the basic list-handling primitives.  Because we've chosen to represent our lists as Haskell algebraic data types instead of pairs, these are somewhat more complicated than their definitions in many Lisps.  It's easiest to think of them in terms of their effect on printed S-expressions:<span class="inline_lisp"><ol>
+<li>(car (a b c)) = a</li>
+<li>(car (a)) = a</li>
+<li>(car (a b . c)) = a</li>
+<li>(car a) = error (not a list)</li>
+<li>(car a b) = error (car takes only one argument)</li>
+</ol></span>
+We can translate these fairly straightforwardly into pattern clauses, recalling that <span class="inline_code">(x : xs)</span> divides a list into the first element and the rest:
+<pre class="tutorial">
+car :: [LispVal] -&gt; ThrowsError LispVal
+car [List (x : xs)] = return x
+car [DottedList (x : xs) _] = return x
+car [badArg] = throwError $ TypeMismatch "pair" badArg
+car badArgList = throwError $ NumArgs 1 badArgList
+</pre>
+Let's do the same with cdr:<span class="inline_lisp"><ol>
+<li>(cdr (a b c)) = (b c)</li>
+<li>(cdr (a b)) = (b)</li>
+<li>(cdr (a)) = NIL</li>
+<li>(cdr (a b . c)) = (b . c)</li>
+<li>(cdr (a . b)) = b</li>
+<li>(cdr a) = error (not list)</li>
+<li>(cdr a b) = error (too many args)</li>
+</ol></span>
+We can represent the first 3 cases with a single clause.  Our parser represents <span class="inline_lisp">'()</span> as <span class="inline_code">List []</span>, and when you pattern-match <span class="inline_code">(x : xs)</span> against <span class="inline_code">[x]</span>, xs is bound to [].  The other ones translate to separate clauses:
+<pre class="tutorial">
+cdr :: [LispVal] -&gt; ThrowsError LispVal
+cdr [List (x : xs)] = return $ List xs
+cdr [DottedList (_ : xs) x] = return $ DottedList xs x
+cdr [DottedList [xs] x] = return x
+cdr [badArg] = throwError $ TypeMismatch "pair" badArg
+cdr badArgList = throwError $ NumArgs 1 badArgList
+</pre>
+Cons is a little tricky, enough that we should go through each clause case-by-case.  If you cons together anything with <span class="inline_lisp">Nil</span>, you end up with a one-item list, the <span class="inline_lisp">Nil</span> serving as a terminator:
+<pre class="tutorial">
+cons :: [LispVal] -&gt; ThrowsError LispVal
+cons [x1, List []] = return $ List [x1]
+</pre>
+If you cons together anything and a list, it's like tacking that anything onto the front of the list:
+<pre class="tutorial">
+cons [x, List xs] = return $ List $ [x] ++ xs
+</pre>
+However, if the list is a DottedList, then it should stay a DottedList, taking into account the improper tail:
+<pre class="tutorial">
+cons [x, DottedList xs xlast] = return $ DottedList ([x] ++ xs) xlast
+</pre>
+If you cons together two non-lists, or put a list in front, you get a <i>DottedList</i>.  This is because such a cons cell isn't terminated by the normal Nil that most lists are.
+<pre class="tutorial">
+cons [x1, x2] = return $ DottedList [x1] x2
+</pre>
+Finally, attempting to cons together more or less than 2 arguments is an error:
+<pre class="tutorial">
+cons badArgList = throwError $ NumArgs 2 badArgList
+</pre>
+Our last step is to implement eqv?.  Scheme offers 3 levels of equivalence predicates: <a href="http://web.archive.org/web/20130714045457/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.1">eq?, eqv?, and equal?</a>.  For our purposes, eq? and eqv? are basically the same: they recognize two items as the same if they print the same, and are fairly slow.  So we can write one function for both of them and register it under eq? and eqv?.
+<pre class="tutorial">
+eqv :: [LispVal] -&gt; ThrowsError LispVal
+eqv [(Bool arg1), (Bool arg2)] = return $ Bool $ arg1 == arg2
+eqv [(Number arg1), (Number arg2)] = return $ Bool $ arg1 == arg2
+eqv [(String arg1), (String arg2)] = return $ Bool $ arg1 == arg2
+eqv [(Atom arg1), (Atom arg2)] = return $ Bool $ arg1 == arg2
+eqv [(DottedList xs x), (DottedList ys y)] = eqv [List $ xs ++ [x], List $ ys ++ [y]]
+eqv [(List arg1), (List arg2)] = return $ Bool $ (length arg1 == length arg2) &amp;&amp; 
+                                                    (and $ map eqvPair $ zip arg1 arg2)
+    where eqvPair (x1, x2) = case eqv [x1, x2] of
+                               Left err -&gt; False
+                               Right (Bool val) -&gt; val
+eqv [_, _] = return $ Bool False
+eqv badArgList = throwError $ NumArgs 2 badArgList
+</pre>
+Most of these clauses are self-explanatory, the exception being the one for two Lists.  This, after checking to make sure the lists are the same length, <a href="http://web.archive.org/web/20130714045457/http://www.haskell.org/onlinereport/standard-prelude.html#$vzip">zip</a>s the two lists of pairs, runs eqvPair on them to test if each corresponding pair is equal, and then uses the function <a href="http://web.archive.org/web/20130714045457/http://www.haskell.org/onlinereport/standard-prelude.html#$vand">and</a> to return false if any of the resulting values is false.  eqvPair is an example of a local definition: it is defined using the 'where' keyword, just like a normal function, but is available only within that particular clause of eqv.
+</p><p>
+Compile and run to try out the new list functions:
+<pre class="console">
+jdtang@debian:~/haskell_tutorial/draft3/code$ ghc -package parsec -o eqv <a href="/web/20130714045457/http://jonathan.tang.name/files/scheme_in_48/code/listing6.3.hs">listing6.3.hs</a>
+jdtang@debian:~/haskell_tutorial/draft3/code$ ./eqv "(car '(2 3 4))"
+2
+jdtang@debian:~/haskell_tutorial/draft3/code$ ./eqv "(cdr '(2 3 4))"
+(3 4)
+jdtang@debian:~/haskell_tutorial/draft3/code$ ./eqv "(car (cdr (cons 2 '(3 4))))"
+3
+</pre>
+</p>
+<a name="equal"/>
+<h3>6.4 Equal? and Weak Typing: Heterogenous Lists</h3>
+<p>
+Since we introduced weak typing above, we'd also like to introduce an equal? function that ignores differences in the type tags and only tests if two values can be interpreted the same.  For example, <span class="inline_lisp">(eqv? 2 "2") = #f</span>, yet we'd like <span class="inline_lisp">(equal? 2 "2") = #t</span>.  Basically, we want to try all of our unpack functions, and if any of them result in Haskell values that are equal, return true.
+</p><p>
+The obvious way to approach this is to store the unpacking functions in a list and use mapM to execute them in turn.  Unfortunately, this doesn't work, because standard Haskell only lets you put objects in a list <i>if they're the same type</i>.  The various unpacker functions return different types, so you can't store them in the same list.
+</p><p>
+We'll get around this by using a GHC extension - <a href="http://web.archive.org/web/20130714045457/http://www.haskell.org/hawiki/ExistentialTypes">Existential Types</a> - that lets us create a heterogenous list, subject to typeclass constraints.  Extensions are fairly common in the Haskell world: they're basically necessary to create any reasonably large program, and they're often compatible between implementations (existential types work in both Hugs and GHC and are a candidate for standardization).  
+</p><p>
+The first thing we need to do is define a data type that can hold any function from a LispVal -&gt; something, provided that that "something" supports equality:
+<pre class="tutorial">
+data Unpacker = forall a. Eq a =&gt; AnyUnpacker (LispVal -&gt; ThrowsError a)
+</pre>
+This is like any normal algebraic datatype, except for the type constraint.  It says, "For any type that is an instance of Eq, you can define an Unpacker that takes a function from LispVal to that type, and may throw an error".  We'll have to wrap our functions with the AnyUnpacker constructor, but then we can create a list of Unpackers that does just what we want it.
+</p><p>
+Rather than jump straight to the equal? function, let's first define a helper function that takes an unpacker and then determines if two LispVals are equal when it unpacks them:
+<pre class="tutorial">
+unpackEquals :: LispVal -&gt; LispVal -&gt; Unpacker -&gt; ThrowsError Bool
+unpackEquals arg1 arg2 (AnyUnpacker unpacker) = 
+             do unpacked1 &lt;- unpacker arg1
+                unpacked2 &lt;- unpacker arg2
+                return $ unpacked1 == unpacked2
+        `catchError` (const $ return False)
+</pre>
+After pattern-matching to retrieve the actual function, we enter a do-block for the ThrowsError monad.  This retrieves the Haskell values of the two LispVals, and then tests whether they're equal.  If there is an error anywhere within the two unpackers, it returns false, using the <a href="http://web.archive.org/web/20130714045457/http://www.haskell.org/onlinereport/standard-prelude.html#$vconst">const</a> function because <a href="http://web.archive.org/web/20130714045457/http://www.haskell.org/ghc/docs/latest/html/libraries/mtl/Control-Monad-Error.html">catchError</a> expects a function to apply to the error value.
+</p><p>
+Finally, we can define equal? in terms of these helpers:
+<pre class="tutorial">
+equal :: [LispVal] -&gt; ThrowsError LispVal
+equal [arg1, arg2] = do
+    primitiveEquals &lt;- liftM or $ mapM (unpackEquals arg1 arg2) 
+                      [AnyUnpacker unpackNum, AnyUnpacker unpackStr, AnyUnpacker unpackBool]
+    eqvEquals &lt;- eqv [arg1, arg2]
+    return $ Bool $ (primitiveEquals || let (Bool x) = eqvEquals in x)
+equal badArgList = throwError $ NumArgs 2 badArgList
+</pre>
+The first action makes a heterogenous list of [unpackNum, unpackStr, unpackBool], and then maps the partially-applied (unpackEquals arg1 arg2) over it.  This gives a list of Bools, so we use the Prelude function <a href="http://web.archive.org/web/20130714045457/http://www.haskell.org/onlinereport/standard-prelude.html#$vor">or</a> to return true if any single one of them is true.
+</p><p>
+The second action tests the two arguments with eqv?.  Since we want equal? to be looser than eqv?, it should return true whenever eqv? does so.  This also lets us avoid handling cases like the list or dotted-list (though this introduces a bug; see exercise #2 in this section).
+</p><p>
+Finally, equal? ors both of these values together and wraps the result in the Bool constructor, returning a LispVal.  The <span class="inline_code">let (Bool x) = eqvEquals in x</span> is a quick way of extracting a value from an algebraic type: it pattern matches Bool x against the eqvEquals value, and then returns x.  The result of a let-expression is the expression following the keyword "in".
+</p><p>
+To use these functions, insert them into our primitives list:
+<pre class="tutorial">
+              ("car", car),
+              ("cdr", cdr),
+              ("cons", cons),
+              ("eq?", eqv),
+              ("eqv?", eqv),
+              ("equal?", equal)]
+</pre>
+To compile this code, you need to enable GHC extensions with -fglasgow-exts:
+<pre class="console">
+debian:/home/jdtang/haskell_tutorial/code$ ghc -package parsec -fglasgow-exts -o parser <a href="/web/20130714045457/http://jonathan.tang.name/files/scheme_in_48/code/listing6.4.hs">listing6.4.hs</a>
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(cdr '(a simple test))"
+(simple test)
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(car (cdr '(a simple test)))"
+simple
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(car '((this is) a test))"
+(this is)
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(cons '(this is) 'test)"
+((this is) . test)
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(cons '(this is) '())"
+((this is))
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(eqv? 1 3)" #f
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(eqv? 3 3)"
+#t
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(eqv? 'atom 'atom)"
+#t
+</pre>
+<h4>Exercises</h4>
+<ol>
+<li>Instead of treating any non-false value as true, change the definition of "if" so that the predicate accepts only Bool values and throws an error on any others.</li>
+<li>equal? has a bug in that a list of values is compared using eqv? instead of equal?.  For example, <span class="inline_lisp">(equal? '(1 "2") '(1 2)) = #f</span>, while you'd expect it to be true.  Change equal? so that it continues to ignore types as it recurses into list structures.  You can either do this explicitly, following the example in eqv?, or factor the list clause into a separate helper function that is parameterized by the equality testing function.</li>
+<li>Implement <a href="http://web.archive.org/web/20130714045457/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-7.html#%_idx_106">cond</a> and <a href="http://web.archive.org/web/20130714045457/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-7.html#%_idx_114">case</a> expressions.</li>
+<li>Add the rest of the <a href="http://web.archive.org/web/20130714045457/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.3.5">string functions</a>.  You don't yet know enough to do string-set!; this is difficult to implement in Haskell, but you'll have enough information after the next 2 sections</li>
+</ol>
+<div align="right">
+<a href="repl.html">Next: Building a REPL</a>
+</div>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 04:54:57 Jul 14, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:42:53 Jan 11, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  exclusion.robots.policy: 0.4
+  LoadShardBlock: 92.342 (3)
+  RedisCDXSource: 0.541
+  exclusion.robots: 0.417
+  CDXLines.iter: 22.423 (3)
+  PetaboxLoader3.datanode: 178.074 (4)
+  esindex: 0.01
+  PetaboxLoader3.resolve: 31.276
+  captures_list: 119.07
+  load_resource: 129.947
+-->

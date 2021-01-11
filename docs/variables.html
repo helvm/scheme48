@@ -1,0 +1,384 @@
+<html>
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app31.us.archive.org';v.server_ms=296;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=SOX25l-I" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
+<script type="text/javascript">
+  __wm.init("http://web.archive.org/web");
+  __wm.wombat("http://jonathan.tang.name:80/files/scheme_in_48/tutorial/variables.html","20130607042347","http://web.archive.org/","web","/_static/",
+	      "1370579027");
+</script>
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
+<!-- End Wayback Rewrite JS Include -->
+
+<title>Write Yourself a Scheme in 48 hours</title>
+<link rel="stylesheet" href="/web/20130607042347cs_/http://jonathan.tang.name/files/scheme_in_48/tutorial/styles.css"/>
+</head>
+<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<script>__wm.rw(0);</script>
+<div id="wm-ipp-base" lang="en" style="display:none;direction:ltr;">
+<div id="wm-ipp" style="position:fixed;left:0;top:0;right:0;">
+<div id="wm-ipp-inside">
+  <div style="position:relative;">
+    <div id="wm-logo" style="float:left;width:110px;padding-top:12px;">
+      <a href="/web/" title="Wayback Machine home page"><img src="/_static/images/toolbar/wayback-toolbar-logo-200.png" srcset="/_static/images/toolbar/wayback-toolbar-logo-100.png, /_static/images/toolbar/wayback-toolbar-logo-150.png 1.5x, /_static/images/toolbar/wayback-toolbar-logo-200.png 2x" alt="Wayback Machine" style="width:100px" border="0" /></a>
+    </div>
+    <div class="r" style="float:right;">
+      <div id="wm-btns" style="text-align:right;height:25px;">
+                  <div id="wm-save-snapshot-success">success</div>
+          <div id="wm-save-snapshot-fail">fail</div>
+          <a id="wm-save-snapshot-open" href="#"
+	     title="Share via My Web Archive" >
+            <span class="iconochive-web"></span>
+          </a>
+          <a href="https://archive.org/account/login.php"
+             title="Sign In"
+             id="wm-sign-in"
+          >
+            <span class="iconochive-person"></span>
+          </a>
+          <span id="wm-save-snapshot-in-progress" class="iconochive-web"></span>
+        	<a href="http://faq.web.archive.org/" title="Get some help using the Wayback Machine" style="top:-6px;"><span class="iconochive-question" style="color:rgb(87,186,244);font-size:160%;"></span></a>
+	<a id="wm-tb-close" href="#close" onclick="__wm.h(event);return false;" style="top:-2px;" title="Close the toolbar"><span class="iconochive-remove-circle" style="color:#888888;font-size:240%;"></span></a>
+      </div>
+      <div id="wm-share">
+          <a href="/web/20130607042347/http://web.archive.org/screenshot/http://jonathan.tang.name/files/scheme_in_48/tutorial/variables.html"
+             id="wm-screenshot"
+             title="screenshot">
+            <span class="wm-icon-screen-shot"></span>
+          </a>
+	<a id="wm-share-facebook" href="#" data-url="http://web.archive.org/web/20130607042347/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/variables.html" title="Share on Facebook" style="margin-right:5px;" target="_blank"><span class="iconochive-facebook" style="color:#3b5998;font-size:160%;"></span></a>
+	<a id="wm-share-twitter" href="#" data-url="http://web.archive.org/web/20130607042347/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/variables.html" title="Share on Twitter" style="margin-right:5px;" target="_blank"><span class="iconochive-twitter" style="color:#1dcaff;font-size:160%;"></span></a>
+      </div>
+    </div>
+    <table class="c" style="">
+      <tbody>
+	<tr>
+	  <td class="u" colspan="2">
+	    <form target="_top" method="get" action="/web/submit" name="wmtb" id="wmtb"><input type="text" name="url" id="wmtbURL" value="http://jonathan.tang.name/files/scheme_in_48/tutorial/variables.html" onfocus="this.focus();this.select();" /><input type="hidden" name="type" value="replay" /><input type="hidden" name="date" value="20130607042347" /><input type="submit" value="Go" /></form>
+	  </td>
+	  <td class="n" rowspan="2" style="width:110px;">
+	    <table>
+	      <tbody>
+		<!-- NEXT/PREV MONTH NAV AND MONTH INDICATOR -->
+		<tr class="m">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20130224015112/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/variables.html" title="24 Feb 2013"><strong>Feb</strong></a></td>
+		  <td class="c" id="displayMonthEl" title="You are here: 04:23:47 Jun 07, 2013">JUN</td>
+		  <td class="f" nowrap="nowrap">Jul</td>
+		</tr>
+		<!-- NEXT/PREV CAPTURE NAV AND DAY OF MONTH INDICATOR -->
+		<tr class="d">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20130224015112/http://jonathan.tang.name:80/files/scheme_in_48/tutorial/variables.html" title="01:51:12 Feb 24, 2013"><img src="/_static/images/toolbar/wm_tb_prv_on.png" alt="Previous capture" width="14" height="16" border="0" /></a></td>
+		  <td class="c" id="displayDayEl" style="width:34px;font-size:24px;white-space:nowrap;" title="You are here: 04:23:47 Jun 07, 2013">07</td>
+		  <td class="f" nowrap="nowrap"><img src="/_static/images/toolbar/wm_tb_nxt_off.png" alt="Next capture" width="14" height="16" border="0" /></td>
+		</tr>
+		<!-- NEXT/PREV YEAR NAV AND YEAR INDICATOR -->
+		<tr class="y">
+		  <td class="b" nowrap="nowrap"><a href="http://web.archive.org/web/20120403010849/http://jonathan.tang.name/files/scheme_in_48/tutorial/variables.html" title="03 Apr 2012"><strong>2012</strong></a></td>
+		  <td class="c" id="displayYearEl" title="You are here: 04:23:47 Jun 07, 2013">2013</td>
+		  <td class="f" nowrap="nowrap">2014</td>
+		</tr>
+	      </tbody>
+	    </table>
+	  </td>
+	</tr>
+	<tr>
+	  <td class="s">
+	    	    <div id="wm-nav-captures">
+	      	      <a class="t" href="/web/20130607042347*/http://jonathan.tang.name/files/scheme_in_48/tutorial/variables.html" title="See a list of every capture for this URL">12 captures</a>
+	      <div class="r" title="Timespan for captures of this URL">05 Sep 2009 - 07 Jun 2013</div>
+	      </div>
+	  </td>
+	  <td class="k">
+	    <a href="" id="wm-graph-anchor">
+	      <div id="wm-ipp-sparkline" title="Explore captures for this URL" style="position: relative">
+		<canvas id="wm-sparkline-canvas" width="650" height="27" border="0"></canvas>
+	      </div>
+	    </a>
+	  </td>
+	</tr>
+      </tbody>
+    </table>
+    <div style="position:absolute;bottom:0;right:2px;text-align:right;">
+      <a id="wm-expand" class="wm-btn wm-closed" href="#expand" onclick="__wm.ex(event);return false;"><span id="wm-expand-icon" class="iconochive-down-solid"></span> <span style="font-size:80%">About this capture</span></a>
+    </div>
+  </div>
+    <div id="wm-capinfo" style="border-top:1px solid #777;display:none; overflow: hidden">
+                    <div id="wm-capinfo-collected-by">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center">COLLECTED BY</div>
+    <div style="padding:3px;position:relative" id="wm-collected-by-content">
+            <div style="display:inline-block;vertical-align:top;width:50%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls);"></span>
+		Organization: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+      <div style="display:inline-block;vertical-align:top;width:49%;">
+			<span class="c-logo" style="background-image:url(https://archive.org/services/img/alexacrawls)"></span>
+		<div>Collection: <a style="color:#33f;" href="https://archive.org/details/alexacrawls" target="_new"><span class="wm-title">Alexa Crawls</span></a></div>
+		<div style="max-height:75px;overflow:hidden;position:relative;">
+	  <div style="position:absolute;top:0;left:0;width:100%;height:75px;background:linear-gradient(to bottom,rgba(255,255,255,0) 0%,rgba(255,255,255,0) 90%,rgba(255,255,255,255) 100%);"></div>
+	  Starting in 1996, <a href="http://www.alexa.com/">Alexa Internet</a> has been donating their crawl data to the Internet Archive.  Flowing in every day, these data are added to the <a href="http://web.archive.org/">Wayback Machine</a> after an embargo period.
+	</div>
+	      </div>
+    </div>
+    </div>
+    <div id="wm-capinfo-timestamps">
+    <div style="background-color:#666;color:#fff;font-weight:bold;text-align:center" title="Timestamps for the elements of this page">TIMESTAMPS</div>
+    <div>
+      <div id="wm-capresources" style="margin:0 5px 5px 5px;max-height:250px;overflow-y:scroll !important"></div>
+      <div id="wm-capresources-loading" style="text-align:left;margin:0 20px 5px 5px;display:none"><img src="/_static/images/loading.gif" alt="loading" /></div>
+    </div>
+    </div>
+  </div></div></div></div><div id="donato" style="position:relative;width:100%;">
+  <div id="donato-base">
+    <iframe id="donato-if" src="https://archive.org/includes/donate.php?as_page=1&amp;platform=wb&amp;referer=http%3A//web.archive.org/web/20130607042347/http%3A//jonathan.tang.name/files/scheme_in_48/tutorial/variables.html"
+	    scrolling="no" frameborder="0" style="width:100%; height:100%">
+    </iframe>
+  </div>
+</div><script type="text/javascript">
+__wm.bt(650,27,25,2,"web","http://jonathan.tang.name/files/scheme_in_48/tutorial/variables.html","20130607042347",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
+  __wm.rw(1);
+</script>
+<!-- END WAYBACK TOOLBAR INSERT -->
+<h1 align="center">Write Yourself a Scheme in 48 Hours</h1>
+<h2 align="center">A Haskell Tutorial</h2>
+<h3 align="center">By Jonathan Tang</h3>
+<center><p><a href="/web/20130607042347/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.tgz">Download in .tar.gz format</a><br/>
+<a href="/web/20130607042347/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.zip">Download in .zip format</a></p></center>
+<h3>Contents</h3>
+<ol>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="firststeps.html">First Steps: Compiling and running</a></li>
+<li><a href="parser.html">Parsing</a></li>
+<ol>
+<li><a href="parser.html#symbols">A Simple Parser</a></li>
+<li><a href="parser.html#whitespace">Whitespace</a></li>
+<li><a href="parser.html#primitives">Literal Numbers and Strings: Return Values</a></li>
+<li><a href="parser.html#lists">Lists, Dotted Lists, and Quoted Data: Recursive Parsers</a></li>
+</ol>
+<li><a href="evaluator1.html">Evaluation, Part 1</a></li>
+<ol>
+<li><a href="evaluator1.html#show">Displaying Values: Show and Typeclasses</a></li>
+<li><a href="evaluator1.html#primitiveval">Evaluating Primitive Values: Pattern Matching</a></li>
+<li><a href="evaluator1.html#primitivefunc">Evaluating Primitive Functions: First-class Functions</a></li>
+</ol>
+<li><a href="errorcheck.html">Intermezzo: Error Checking &amp; Exceptions</a></li>
+<li><a href="evaluator2.html">Evaluation, Part 2</a></li>
+<ol>
+<li><a href="evaluator2.html#primitives">Additional Primitives: Partial Application</a></li>
+<li><a href="evaluator2.html#conditionals">Conditionals: Pattern Matching 2</a></li>
+<li><a href="evaluator2.html#lists">List Primitives: car, cdr, and cons</a></li>
+<li><a href="evaluator2.html#equal">Equal? and Weak Typing: Heterogenous Lists</a></li>
+</ol>
+<li><a href="repl.html">Building a REPL: Basic I/O</a></li>
+<li>Adding Variables and Assignment: Mutable State in Haskell</li>
+<li><a href="functions.html">Defining Scheme Functions: Closures and Environments</a></li>
+<li><a href="io.html">Creating IO Primitives: File I/O</a></li>
+<li><a href="stdlib.html">Towards a Standard Library: Fold and Unfold</a></li>
+<li><a href="conclusion.html">Conclusion &amp; Further Resources</a></li>
+</ol>
+<h3>8. Adding Variables: State in Haskell</h3>
+<p>
+Finally, we get to the good stuff: variables.  A variable lets us save the result of an expression and refer to it later.  In Scheme, a variable can also be reset to new values, so that its value changes as the program executes.  This presents a complication for Haskell, because the execution model is built upon functions that return values, but never change them.
+</p><p>
+Nevertheless, there are several ways to simulate state in Haskell, all involving monads.  The simplest is probably the <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/latest/html/libraries/mtl/Control-Monad-State.html">State monad</a>, which lets you hide arbitrary state within the monad and pass it around behind the scenes.  You specify the state type as a parameter to the monad (eg. if a function returns an integer but modifies a list of string pairs, it would have type <span class="inline_code">State [(String, String)] Integer</span>), and access it via the get and put functions, usually within a do-block.  You'd specify the initial state via the <span class="inline_code">runState myStateAction initialList</span>, which returns a pair containing the return value and the final state.
+</p><p>
+Unfortunately, the state monad doesn't work well for us, because the type of data we need to store is fairly complex.  For a simple top-level environment, we could get away with <span class="inline_code">[(String, LispVal)]</span>, storing mappings from variable names to values.  However, when we start dealing with function calls, these mappings become a stack of nested environments, arbitrarily deep.  And when we add closures, environments might get saved in an arbitrary Function value, and passed around throughout the program.  In fact, they might be saved in a variable and passed out of the runState monad entirely, something we're not allowed to do.
+</p><p>
+Instead, we use a feature called <i>state threads</i>, letting Haskell manage the aggregate state for us.  This lets us treat mutable variables as we would in any other programming language, using functions to get or set variables.  There are two flavors of state threads: the <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/latest/html/libraries/base/Control-Monad-ST.html">ST monad</a> creates a stateful computation that can be executed as a unit, without the state escaping to the rest of the program.  The <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/latest/html/libraries/base/Data-IORef.html">IORef module</a> lets you use stateful variables within the IO monad.  Since our state has to be interleaved with IO anyway (it persists between lines in the REPL, and we will eventually have IO functions within the language itself), we'll be using IORefs.
+</p><p>
+We can start out by importing <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/6.4/html/libraries/base/Data.IORef.html">Data.IORef</a> and defining a type for our environments:
+<pre class="tutorial">
+import Data.IORef
+
+type Env = IORef [(String, IORef LispVal)]
+</pre>
+This declares an Env as an IORef holding a list that maps Strings to mutable LispVals.  We need IORefs for both the list itself and for individual values because there are <i>two</i> ways that the program can mutate the environment.  It might use <span class="inline_lisp">set!</span> to change the value of an individual variable, a change visible to any function that shares that environment (Scheme allows nested scopes, so a variable in an outer scope is visible to all inner scopes).  Or it might use <span class="inline_lisp">define</span> to add a new variable, which should be visible on all subsequent statements.
+</p><p>
+Since IORefs can only be used within the IO monad, we'll want a helper action to create an empty environment.  We can't just use the empty list [] because all accesses to IORefs must be sequenced, and so the type of our null environment is IO Env instead of just plain Env:
+<pre class="tutorial">
+nullEnv :: IO Env
+nullEnv = newIORef []
+</pre>
+From here, things get a bit more complicated, because we'll be simultaneously dealing with <i>two</i> monads.  Remember, we also need an Error monad to handle things like unbound variables.  The parts that need IO functionality and the parts that may throw exceptions are interleaved, so we can't just catch all the exceptions and return only normal values to the IO monad.
+</p><p>
+Haskell provides a mechanism known as <i>monad transformers</i> that lets you combine the functionality of multiple monads.  We'll be using one of these - <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/6.4/html/libraries/mtl/Control.Monad.Error.html#t%3aErrorT">ErrorT</a> - which lets us layer error-handling functionality on top of the IO monad.  Our first step is create a type synonym for our combined monad:
+<pre class="tutorial">
+type IOThrowsError = ErrorT LispError IO
+</pre>
+Like IOThrows, IOThrowsError is really a type constructor: we've left off the last argument, the return type of the function.  However, ErrorT takes one more argument than plain old Either: we have to specify the type of monad that we're layering our error-handling functionality over.  We've created a monad that may contain IO actions that throw a LispError.
+</p><p>
+We have a mix of IOThrows and IOThrowsError functions, but actions of different types cannot be contained within the same do-block, even if they provide essentially the same functionality. Haskell already provides a mechanism - <a href="http://web.archive.org/web/20130607042347/http://www.nomaware.com/monads/html/transformers.html#lifting">lifting</a> to bring values of the lower type (IO) into the combined monad.  Unfortunately, there's no similar support to bring a value of the untransformed upper type into the combined monad, so we need to write it ourselves:
+<pre class="tutorial">
+liftThrows :: ThrowsError a -&gt; IOThrowsError a
+liftThrows (Left err) = throwError err
+liftThrows (Right val) = return val
+</pre>
+This destructures the Either type and either re-throws the error type or returns the ordinary value.  Methods in typeclasses resolve based on the type of the expression, so <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/latest/html/libraries/mtl/Control-Monad-Error.html#v%3AthrowError">throwError</a> and <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/onlinereport/standard-prelude.html#$tMonad">return</a> (members of <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/6.4/html/libraries/mtl/Control.Monad.Error.html#t%3aMonadError">MonadError</a> and <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/onlinereport/standard-prelude.html#$tMonad">Monad</a>, respectively) take on their IOThrowsError definitions.  Incidentally, the type signature provided here is not fully general: if we'd left it off, the compiler would have inferred <span class="inline_code">liftThrows :: MonadError m =&gt; Either e a -&gt; m e</span>.
+</p><p>
+We'll also want a helper function to run the whole top-level IOThrowsError action, returning an IO action.  We can't escape from the IO monad, because a function that performs IO has an effect on the outside world, and you don't want that in a lazily-evaluated pure function.  But you can run the error computation and catch the errors.
+<pre class="tutorial">
+runIOThrows :: IOThrowsError String -&gt; IO String
+runIOThrows action = runErrorT (trapError action) &gt;&gt;= return . extractValue
+</pre>
+This uses our previously-defined <span class="inline_code">trapError</span> function to take any error values and convert them to their string representations, then runs the whole computation via runErrorT.  The result is passed into extractValue and returned as a value in the IO monad.
+</p><p>
+Now we're ready to return to environment handling.  We'll start with a function to determine if a given variable is already bound in the environment, necessary for proper handling of <a href="http://web.archive.org/web/20130607042347/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-8.html#%_sec_5.2">define</a>:
+<pre class="tutorial">
+isBound :: Env -&gt; String -&gt; IO Bool
+isBound envRef var = readIORef envRef &gt;&gt;= return . maybe False (const True) . lookup var
+</pre>
+This first extracts the actual environment value from its IORef via readIORef.  Then we pass it to lookup to search for the particular variable we're interested in.  lookup returns a Maybe value, so we return False if that value was Nothing and True otherwise (we need to use the <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/onlinereport/standard-prelude.html#$vconst">const</a> function because <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/onlinereport/standard-prelude.html#$vmaybe">maybe</a> expects a function to perform on the result and not just a value).  Finally, we use return to lift that value into the IO monad.  Since we're just interested in a true/false value, we don't need to deal with the actual IORef that lookup returns.
+</p><p>
+Next, we'll want to define a function to retrieve the current value of a variable:
+<pre class="tutorial">
+getVar :: Env -&gt; String -&gt; IOThrowsError LispVal
+getVar envRef var  =  do env &lt;- liftIO $ readIORef envRef
+                         maybe (throwError $ UnboundVar "Getting an unbound variable" var)
+                               (liftIO . readIORef)
+                               (lookup var env)
+</pre>
+Like the previous function, this begins by retrieving the actual environment from the IORef.  However, getVar uses the IOThrowsError monad, because it also needs to do some error handling.  As a result, we need to use the <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/6.4/html/libraries/mtl/Control.Monad.Trans.html#v%3aliftIO">liftIO</a> function to lift the readIORef action into the combined monad.  Similarly, when we return the value, we use liftIO . readIORef to generate an IOThrowsError action that reads the returned IORef.  We don't need to use liftIO to throw an error, however, because throwError is a defined for the <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/6.4/html/libraries/mtl/Control.Monad.Error.html#t%3aMonadError">MonadError typeclass</a>, of which ErrorT is an instance.
+</p><p>
+Now we create a function to set values:
+<pre class="tutorial">
+setVar :: Env -&gt; String -&gt; LispVal -&gt; IOThrowsError LispVal
+setVar envRef var value = do env &lt;- liftIO $ readIORef envRef
+                             maybe (throwError $ UnboundVar "Setting an unbound variable" var) 
+                                   (liftIO . (flip writeIORef value))
+                                   (lookup var env)
+                             return value
+</pre>
+Again, we first read the environment out of its IORef and run a lookup on it.  This time, however, we want to change the variable instead of just reading it.  The <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/ghc/docs/6.4/html/libraries/base/Data.IORef.html#v%3awriteIORef">writeIORef</a> action provides a means for this, but takes its arguments in the wrong order (ref -&gt; value instead of value -&gt; ref).  So we use the built-in function <a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/onlinereport/standard-prelude.html#$vflip">flip</a> to switch the arguments of writeIORef around, and then pass it the value.  Finally, we return the value we just set, for convenience.
+</p><p>
+We'll want a function to handle the special behavior of <a href="http://web.archive.org/web/20130607042347/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-8.html#%_sec_5.2">define</a>, which sets a variable if already bound or creates a new one if not.  Since we've already defined a function to set values, we can use it in the former case:
+<pre class="tutorial">
+defineVar :: Env -&gt; String -&gt; LispVal -&gt; IOThrowsError LispVal
+defineVar envRef var value = do 
+    alreadyDefined &lt;- liftIO $ isBound envRef var 
+    if alreadyDefined 
+       then setVar envRef var value &gt;&gt; return value
+       else liftIO $ do 
+          valueRef &lt;- newIORef value
+          env &lt;- readIORef envRef
+          writeIORef envRef ((var, valueRef) : env)
+          return value
+</pre>
+It's the latter case that's interesting, where the variable is unbound.  We create an IO action (via do-notation) that creates a new IORef to hold the new variable, reads the current value of the environment, then writes a new list back to that variable consisting of the new (key, variable) pair added to the front of the list.  Then we lift that whole do-block into the IOThrowsError monad with liftIO.
+</p><p>
+There's one more useful environment function: being able to bind a whole bunch of variables at once, like what would happen at function invocation.  We might as well build that functionality now, though we won't be using it until the next section:
+<pre class="tutorial">
+bindVars :: Env -&gt; [(String, LispVal)] -&gt; IO Env
+bindVars envRef bindings = readIORef envRef &gt;&gt;= extendEnv bindings &gt;&gt;= newIORef
+    where extendEnv bindings env = liftM (++ env) (mapM addBinding bindings)
+          addBinding (var, value) = do ref &lt;- newIORef value
+                                       return (var, ref)
+</pre>
+This is perhaps more complicated than the other functions, since it uses a monadic pipeline (rather than do-notation) and a pair of helper functions to do the work.  It's best to start with the helper functions.  addBinding takes a variable name and value, creates an IORef to hold the new variable , and then returns the (name, value) pair.  extendEnv calls addBinding on each member of bindings (<a href="http://web.archive.org/web/20130607042347/http://www.haskell.org/onlinereport/standard-prelude.html#$vmapM">mapM</a>) to create a list of (String, IORef LispVal) pairs, and then appends the current environment to the end of that <span class="inline_code">(++ env)</span>.  Finally, the whole function wires these functions up in a pipeline, starting by reading the existing environment out of its IORef, then passing the result to extendEnv, then returning a new IORef with the extended environment.
+</p><p>
+Now that we have all our environment functions, we need to start using them in the evaluator.  Since Haskell has no global variables, we'll have to thread the environment through the evaluator as a parameter.  While we're at it, we might as well add the <a href="http://web.archive.org/web/20130607042347/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-7.html#%_sec_4.1.6">set!</a> and <a href="http://web.archive.org/web/20130607042347/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-8.html#%_sec_5.2">define</a> special forms.
+<pre class="tutorial">
+eval :: <span class="changed_code">Env -&gt;</span> LispVal -&gt; <span class="changed_code">IOThrowsError</span> LispVal
+eval <span class="changed_code">env</span> val@(String _) = return val
+eval <span class="changed_code">env</span> val@(Number _) = return val
+eval <span class="changed_code">env</span> val@(Bool _) = return val
+<span class="changed_code">eval env (Atom id) = getVar env id</span>
+eval <span class="changed_code">env</span> (List [Atom "quote", val]) = return val
+eval <span class="changed_code">env</span> (List [Atom "if", pred, conseq, alt]) = 
+    do result &lt;- eval <span class="changed_code">env</span> pred
+       case result of
+         Bool False -&gt; eval <span class="changed_code">env</span> alt
+         otherwise -&gt; eval <span class="changed_code">env</span> conseq
+<span class="changed_code">eval env (List [Atom "set!", Atom var, form]) =
+    eval env form &gt;&gt;= setVar env var
+eval env (List [Atom "define", Atom var, form]) =
+    eval env form &gt;&gt;= defineVar env var</span>
+eval <span class="changed_code">env</span> (List (Atom func : args)) = mapM (eval <span class="changed_code">env</span>) args &gt;&gt;= <span class="changed_code">liftThrows . </span>apply func
+eval <span class="changed_code">env</span> badForm = throwError $ BadSpecialForm "Unrecognized special form" badForm
+</pre>
+Since a single environment gets threaded through a whole interactive session, we need to change a few of our IO functions to take an environment.
+<pre class="tutorial">
+evalAndPrint :: Env -&gt; String -&gt; IO ()
+evalAndPrint <span class="changed_code">env</span> expr =  evalString <span class="changed_code">env</span> expr &gt;&gt;= putStrLn
+
+evalString :: Env -&gt; String -&gt; IO String
+evalString <span class="changed_code">env</span> expr = <span class="changed_code">runIOThrows $ </span>liftM show $ (<span class="changed_code">liftThrows $ </span>readExpr expr) &gt;&gt;= eval <span class="changed_code">env</span>
+</pre>
+We need the runIOThrows in evalString because the type of the monad has changed from ThrowsError to IOThrowsError.  Similarly, we need a liftThrows to bring readExpr into the IOThrowsError monad.
+</p><p>
+Next, we initialize the environment with a null variable before starting the program:
+<pre class="tutorial">
+<span class="changed_code">runOne :: String -&gt; IO ()
+runOne expr = nullEnv &gt;&gt;= flip evalAndPrint expr</span>
+
+runRepl :: IO ()
+runRepl = <span class="changed_code">nullEnv &gt;&gt;= </span>until_ (== "quit") (readPrompt "Lisp&gt;&gt;&gt; ") <span class="changed_code">. </span>evalAndPrint
+</pre>
+We've created an additional helper function runOne to handle the single-expression case, since it's now somewhat more involved than just running evalAndPrint.  The changes to runRepl are a bit more subtle: notice how we added a function composition operator before evalAndPrint.  That's because evalAndPrint now takes an additional Env parameter, fed from nullEnv.  The function composition tells until_ that instead of taking plain old evalAndPrint as an action, it ought to apply it first to whatever's coming down the monadic pipeline, in this case the result of nullEnv.  Thus, the actual function that gets applied to each line of input is (evalAndPrint env), just as we want it.
+</p><p>
+Finally, we need to change our main function to call runOne instead of evaluating evalAndPrint directly:
+<pre class="tutorial">
+main :: IO ()
+main = do args &lt;- getArgs
+          case length args of
+              0 -&gt; runRepl
+              1 -&gt; <span class="changed_code">runOne $ args !! 0</span>
+              otherwise -&gt; putStrLn "Program takes only 0 or 1 argument"
+</pre>
+And we can compile and test our program:
+<pre class="console">
+debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o lisp <a href="/web/20130607042347/http://jonathan.tang.name/files/scheme_in_48/code/listing8.hs">listing8.hs</a>
+debian:/home/jdtang/haskell_tutorial/code# ./lisp
+Lisp&gt;&gt;&gt; (define x 3)
+3
+Lisp&gt;&gt;&gt; (+ x 2)
+5
+Lisp&gt;&gt;&gt; (+ y 2)
+Getting an unbound variable: y
+Lisp&gt;&gt;&gt; (define y 5)
+5
+Lisp&gt;&gt;&gt; (+ x (- y 2))
+6
+Lisp&gt;&gt;&gt; (define str "A string")
+"A string"
+Lisp&gt;&gt;&gt; (&lt; str "The string")
+Invalid type: expected number, found "A string"
+Lisp&gt;&gt;&gt; (string&lt;? str "The string")
+#t
+</pre>
+<div align="right">
+<a href="functions.html">Next: Defining Scheme Functions</a>
+</div>
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 04:23:47 Jun 07, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:49:26 Jan 11, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  PetaboxLoader3.datanode: 184.291 (4)
+  LoadShardBlock: 111.542 (3)
+  exclusion.robots: 0.37
+  RedisCDXSource: 4.323
+  CDXLines.iter: 20.042 (3)
+  load_resource: 148.649
+  exclusion.robots.policy: 0.358
+  esindex: 0.015
+  PetaboxLoader3.resolve: 41.977
+  captures_list: 139.666
+-->

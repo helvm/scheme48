@@ -1,3 +1,4 @@
+Version 1
 * [overview.html](overview.html)
 * [firststeps.html](firststeps.html)
 * [parser.html](parser.html)
@@ -11,4 +12,4 @@
 * [stdlib.html](stdlib.html)
 * [conclusion.html](conclusion.html)
 
-
+* [Version 2](https://wespiser.com/writings/wyas/home.html)

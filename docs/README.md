@@ -1,14 +1,14 @@
-* [overview.html]
-* [firststeps.html]
-* [parser.html]
-* [evaluator1.html]
-* [errorcheck.html]
-* [evaluator2.html]
-* [repl.html]
-* [variables.html]
-* [functions.html]
-* [io.html]
-* [stdlib.html]
-* [conclusion.html]
+* [overview.html](overview.html)
+* [firststeps.html](firststeps.html)
+* [parser.html](parser.html)
+* [evaluator1.html](evaluator1.html)
+* [errorcheck.html](errorcheck.html)
+* [evaluator2.html](evaluator2.html)
+* [repl.html](repl.html)
+* [variables.html](variables.html)
+* [functions.html](functions.html)
+* [io.html](io.html)
+* [stdlib.html](stdlib.html)
+* [conclusion.html](conclusion.html)
 
 

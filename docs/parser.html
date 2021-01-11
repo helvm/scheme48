@@ -1,147 +1,136 @@
-
-<!-- saved from url=(0115)http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/parser.html#symbols -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./parser_files/analytics.js" type="text/javascript"></script>
-<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app58.us.archive.org';v.server_ms=253;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="./parser_files/playback.bundle.js" charset="utf-8"></script>
-<script type="text/javascript" src="./parser_files/wombat.js" charset="utf-8"></script>
+<html>
+<head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+<script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app39.us.archive.org';v.server_ms=754;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/playback.bundle.js?v=SOX25l-I" charset="utf-8"></script>
+<script type="text/javascript" src="/_static/js/wombat.js?v=cRqOKCOw" charset="utf-8"></script>
 <script type="text/javascript">
   __wm.init("http://web.archive.org/web");
-  __wm.wombat("http://jonathan.tang.name:80/files/scheme_in_48/tutorial/parser.html","20100428073636","http://web.archive.org/","web","/_static/",
-	      "1272440196");
+  __wm.wombat("http://jonathan.tang.name:80/files/scheme_in_48/tutorial/parser.html","20131030041702","http://web.archive.org/","web","/_static/",
+	      "1383106622");
 </script>
-<link rel="stylesheet" type="text/css" href="./parser_files/banner-styles.css">
-<link rel="stylesheet" type="text/css" href="./parser_files/iconochive.css">
+<link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css?v=bsmaklHF" />
+<link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css?v=qtvMKcIJ" />
 <!-- End Wayback Rewrite JS Include -->
 
 <title>Write Yourself a Scheme in 48 hours</title>
-<link rel="stylesheet" href="./parser_files/styles.css">
+<link rel="stylesheet" href="/web/20131030041702cs_/http://jonathan.tang.name/files/scheme_in_48/tutorial/styles.css"/>
 </head>
-<body><!-- BEGIN WAYBACK TOOLBAR INSERT -->
-<style type="text/css">
-body {
-  margin-top:0 !important;
-  padding-top:0 !important;
-  /*min-width:800px !important;*/
-}
-</style>
-<script>__wm.rw(0);</script>
-<div id="wm-ipp-base" lang="en" style="display: block; direction: ltr;">
-</div><div id="donato" style="position:relative;width:100%;">
-  <div id="donato-base">
-    <iframe id="donato-if" src="./parser_files/donate.html" scrolling="no" frameborder="0" style="width:100%; height:100%">
-    </iframe>
-  </div>
-</div><script type="text/javascript">
-__wm.bt(650,27,25,2,"web","http://jonathan.tang.name/files/scheme_in_48/tutorial/parser.html","20100428073636",1996,"/_static/",["/_static/css/banner-styles.css?v=bsmaklHF","/_static/css/iconochive.css?v=qtvMKcIJ"]);
-  __wm.rw(1);
-</script>
-<!-- END WAYBACK TOOLBAR INSERT -->
+<body>
 <h1 align="center">Write Yourself a Scheme in 48 Hours</h1>
 <h2 align="center">A Haskell Tutorial</h2>
 <h3 align="center">By Jonathan Tang</h3>
-<center><p><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.tgz">Download in .tar.gz format</a><br>
-<a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.zip">Download in .zip format</a></p></center>
+<center><p><a href="/web/20131030041702/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.tgz">Download in .tar.gz format</a><br/>
+<a href="/web/20131030041702/http://jonathan.tang.name/files/scheme_in_48/scheme_in_48.zip">Download in .zip format</a></p></center>
 <h3>Contents</h3>
 <ol>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/overview.html">Overview</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/firststeps.html">First Steps: Compiling and running</a></li>
+<li><a href="overview.html">Overview</a></li>
+<li><a href="firststeps.html">First Steps: Compiling and running</a></li>
 <li>Parsing</li>
 <ol>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/parser.html#symbols">A Simple Parser</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/parser.html#whitespace">Whitespace</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/parser.html#primitives">Literal Numbers and Strings: Return Values</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/parser.html#lists">Lists, Dotted Lists, and Quoted Data: Recursive Parsers</a></li>
+<li><a href="parser.html#symbols">A Simple Parser</a></li>
+<li><a href="parser.html#whitespace">Whitespace</a></li>
+<li><a href="parser.html#primitives">Literal Numbers and Strings: Return Values</a></li>
+<li><a href="parser.html#lists">Lists, Dotted Lists, and Quoted Data: Recursive Parsers</a></li>
 </ol>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator1.html">Evaluation, Part 1</a></li>
+<li><a href="evaluator1.html">Evaluation, Part 1</a></li>
 <ol>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator1.html#show">Displaying Values: Show and Typeclasses</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator1.html#primitiveval">Evaluating Primitive Values: Pattern Matching</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator1.html#primitivefunc">Evaluating Primitive Functions: First-class Functions</a></li>
+<li><a href="evaluator1.html#show">Displaying Values: Show and Typeclasses</a></li>
+<li><a href="evaluator1.html#primitiveval">Evaluating Primitive Values: Pattern Matching</a></li>
+<li><a href="evaluator1.html#primitivefunc">Evaluating Primitive Functions: First-class Functions</a></li>
 </ol>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/errorcheck.html">Intermezzo: Error Checking &amp; Exceptions</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html">Evaluation, Part 2</a></li>
+<li><a href="errorcheck.html">Intermezzo: Error Checking &amp; Exceptions</a></li>
+<li><a href="evaluator2.html">Evaluation, Part 2</a></li>
 <ol>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html#primitives">Additional Primitives: Partial Application</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html#conditionals">Conditionals: Pattern Matching 2</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html#lists">List Primitives: car, cdr, and cons</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator2.html#equal">Equal? and Weak Typing: Heterogenous Lists</a></li>
+<li><a href="evaluator2.html#primitives">Additional Primitives: Partial Application</a></li>
+<li><a href="evaluator2.html#conditionals">Conditionals: Pattern Matching 2</a></li>
+<li><a href="evaluator2.html#lists">List Primitives: car, cdr, and cons</a></li>
+<li><a href="evaluator2.html#equal">Equal? and Weak Typing: Heterogenous Lists</a></li>
 </ol>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/repl.html">Building a REPL: Basic I/O</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/variables.html">Adding Variables and Assignment: Mutable State in Haskell</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/functions.html">Defining Scheme Functions: Closures and Environments</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/io.html">Creating IO Primitives: File I/O</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/stdlib.html">Towards a Standard Library: Fold and Unfold</a></li>
-<li><a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/conclusion.html">Conclusion &amp; Further Resources</a></li>
+<li><a href="repl.html">Building a REPL: Basic I/O</a></li>
+<li><a href="variables.html">Adding Variables and Assignment: Mutable State in Haskell</a></li>
+<li><a href="functions.html">Defining Scheme Functions: Closures and Environments</a></li>
+<li><a href="io.html">Creating IO Primitives: File I/O</a></li>
+<li><a href="stdlib.html">Towards a Standard Library: Fold and Unfold</a></li>
+<li><a href="conclusion.html">Conclusion &amp; Further Resources</a></li>
 </ol>
-<a name="symbols">
+<a name="symbols"/>
 <h3>3.1: Writing a Simple Parser</h3>
-</a><p><a name="symbols">
-Now, let's try writing a very simple parser.  We'll be using the </a><a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html">Parsec</a> library, which comes with GHC but may need to be downloaded separately if you're using another compiler.
+<p>
+Now, let's try writing a very simple parser.  We'll be using the <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html">Parsec</a> library, which comes with GHC but may need to be downloaded separately if you're using another compiler.
 </p><p>
 Start by adding this line to the import section:
-</p><pre class="tutorial">import Text.ParserCombinators.Parsec hiding (spaces)
+<pre class="tutorial">
+import Text.ParserCombinators.Parsec hiding (spaces)
 </pre>
 This makes the Parsec library functions available to us, except the "spaces" function, whose name conflicts with a function that we'll be defining later.
-<p></p><p>
+</p><p>
 Now, we'll define a parser that recognizes one of the symbols allowed in Scheme identifiers:
-</p><pre class="tutorial">symbol :: Parser Char
+<pre class="tutorial">
+symbol :: Parser Char
 symbol = oneOf "!$%&amp;|*+-/:&lt;=&gt;?@^_~"
 </pre>
-This is another example of a monad: in this case, the "extra information" that is being hidden is all the info about position in the input stream, backtracking record, first and follow sets, etc.  Parsec takes care of all of that for us.  We need only use the Parsec library function <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#oneOf">oneOf</a>, and it'll recognize a single one of any of the characters in the string passed to it.  Parsec provides a number of pre-built parsers: for example, <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#letter">letter</a> and <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#digit">digit</a> are library functions.  And as you're about to see, you can compose primitive parsers into more sophisticated productions.
+This is another example of a monad: in this case, the "extra information" that is being hidden is all the info about position in the input stream, backtracking record, first and follow sets, etc.  Parsec takes care of all of that for us.  We need only use the Parsec library function <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#oneOf">oneOf</a>, and it'll recognize a single one of any of the characters in the string passed to it.  Parsec provides a number of pre-built parsers: for example, <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#letter">letter</a> and <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#digit">digit</a> are library functions.  And as you're about to see, you can compose primitive parsers into more sophisticated productions.
 <p>S
 Let's define a function to call our parser and handle any possible errors:
-</p><pre class="tutorial">readExpr :: String -&gt; String
+<pre class="tutorial">
+readExpr :: String -&gt; String
 readExpr input = case parse symbol "lisp" input of
     Left err -&gt; "No match: " ++ show err
     Right val -&gt; "Found value"
 </pre>
-As you can see from the type signature, readExpr is a function (-&gt;) from a String to a String.  We name the parameter <span class="inline_code">input</span>, and pass it, along with the <span class="inline_code">symbol</span> action we defined above and the name of the parser ("lisp"), to the Parsec function <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#parse">parse</a>.
-<p></p><p>
-Parse can return either the parsed value or an error, so we need to handle the error case.  Following typical Haskell convention, Parsec returns an <a href="http://web.archive.org/web/20100428073636/http://www.haskell.org/onlinereport/standard-prelude.html#$tEither">Either</a> data type, using the Left constructor to indicate an error and the Right one for a normal value.
+As you can see from the type signature, readExpr is a function (-&gt;) from a String to a String.  We name the parameter <span class="inline_code">input</span>, and pass it, along with the <span class="inline_code">symbol</span> action we defined above and the name of the parser ("lisp"), to the Parsec function <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#parse">parse</a>.
+</p><p>
+Parse can return either the parsed value or an error, so we need to handle the error case.  Following typical Haskell convention, Parsec returns an <a href="http://web.archive.org/web/20131030041702/http://www.haskell.org/onlinereport/standard-prelude.html#$tEither">Either</a> data type, using the Left constructor to indicate an error and the Right one for a normal value.
 </p><p>
 We use a <span class="inline_code">case...of</span> construction to match the result of <span class="inline_code">parse</span> against these alternatives.  If we get a Left value (error), then we bind the error itself to <span class="inline_code">err</span> and return "No match" with the string representation of the error.  If we get a Right value, we bind it to <span class="inline_code">val</span>, ignore it, and return the string "Found value". 
 </p><p>
-The <span class="inline_code">case...of</span> construction is an example of pattern matching, which we will see in much greater detail <a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator1.html#primitiveval">later on</a>.
+The <span class="inline_code">case...of</span> construction is an example of pattern matching, which we will see in much greater detail <a href="evaluator1.html#primitiveval">later on</a>.
 </p><p>
 Finally, we need to change our main function to call readExpr and print out the result:
-</p><pre class="tutorial">main :: IO ()
+<pre class="tutorial">
+main :: IO ()
 main = do args &lt;- getArgs
           putStrLn <span class="changed_code">(readExpr (args !! 0))</span>
 </pre>
-<p></p><p>
+</p><p>
 To compile and run this, you need to specify "-package parsec" on the command line, or else there will be link errors.  For example:
-</p><pre class="console">debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/code/listing3.1.hs">listing3.1.hs</a>
+<pre class="console">
+debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href="/web/20131030041702/http://jonathan.tang.name/files/scheme_in_48/code/listing3.1.hs">listing3.1.hs</a>
 debian:/home/jdtang/haskell_tutorial/code# ./simple_parser $
 Found value
 debian:/home/jdtang/haskell_tutorial/code# ./simple_parser a
 No match: "lisp" (line 1, column 1):
 unexpected "a"
 </pre>
-<p></p>
+</p>
 <a name="whitespace">
 <h3>3.2: Whitespace</h3>
 <p>
 Next, we'll add a series of improvements to our parser that'll let it recognize progressively more complicated expressions.  The current parser chokes if there's whitespace preceding our symbol:
-</p><pre class="console">debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "   %"
+<pre class="console">
+debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "   %"
 No match: "lisp" (line 1, column 1):
 unexpected " "
 </pre>
 Let's fix that, so that we ignore whitespace.
-<p></p></a><p><a name="whitespace">
-First, lets define a parser that recognizes any number of whitespace characters.  Incidentally, this is why we included the "hiding (spaces)" clause when we imported Parsec: there's already a function "</a><a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#spaces">spaces</a>" in that library, but it doesn't quite do what we want it to.  (For that matter, there's also a parser called <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#lexeme">lexeme</a> that does exactly what we want, but we'll ignore that for pedagogical purposes.)
-</p><pre class="tutorial">spaces :: Parser ()
+</p><p>
+First, lets define a parser that recognizes any number of whitespace characters.  Incidentally, this is why we included the "hiding (spaces)" clause when we imported Parsec: there's already a function "<a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#spaces">spaces</a>" in that library, but it doesn't quite do what we want it to.  (For that matter, there's also a parser called <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#lexeme">lexeme</a> that does exactly what we want, but we'll ignore that for pedagogical purposes.)
+<pre class="tutorial">
+spaces :: Parser ()
 spaces = skipMany1 space
 </pre>
-Just as functions can be passed to functions, so can actions.  Here we pass the Parser action <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#space">space</a> to the Parser action <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#skipMany1">skipMany1</a>, to get a Parser that will recognize one or more spaces.
-<p></p><p>
+Just as functions can be passed to functions, so can actions.  Here we pass the Parser action <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#space">space</a> to the Parser action <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#skipMany1">skipMany1</a>, to get a Parser that will recognize one or more spaces.
+</p><p>
 Now, let's edit our parse function so that it uses this new parser.  Changes are in red:
-</p><pre class="tutorial">readExpr input = case parse <span class="changed_code">(spaces &gt;&gt; symbol)</span> "lisp" input of
+<pre class="tutorial">
+readExpr input = case parse <span class="changed_code">(spaces &gt;&gt; symbol)</span> "lisp" input of
     Left err -&gt; "No match: " ++ show err
     Right val -&gt; "Found value"
 </pre>
 We touched briefly on the &gt;&gt; ("bind") operator in lesson 2, where we mentioned that it was used behind the scenes to combine the lines of a do-block.  Here, we use it explicitly to combine our whitespace and symbol parsers.  However, bind has completely different semantics in the Parser and IO monads.  In the Parser monad, bind means "Attempt to match the first parser, then attempt to match the second with the remaining input, and fail if either fails."  In general, bind will have wildly different effects in different monads; it's intended as a general way to structure computations, and so needs to be general enough to accomodate all the different types of computations.  Read the documentation for the monad to figure out precisely what it does.
-<p></p><p>
+</p><p>
 Compile and run this code.  Note that since we defined spaces in terms of skipMany1, it will no longer recognize a plain old single character.  Instead you <i>have to</i> preceed a symbol with some whitespace.  We'll see how this is useful shortly:
-</p><pre class="console">debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/code/listing3.2.hs">listing3.2.hs</a>
+<pre class="console">
+debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href="/web/20131030041702/http://jonathan.tang.name/files/scheme_in_48/code/listing3.2.hs">listing3.2.hs</a>
 debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "   %" Found value
 debian:/home/jdtang/haskell_tutorial/code# ./simple_parser %
 No match: "lisp" (line 1, column 1):
@@ -152,14 +141,15 @@ No match: "lisp" (line 1, column 4):
 unexpected "a"
 expecting space
 </pre>
-<p></p>
-<a name="primitives">
+</p>
+<a name="primitives"/>
 <h3>3.3: Return Values</h3>
 <p>
 Right now, the parser doesn't <i>do</i> much of anything - it just tells us whether a given string can be recognized or not.  Generally, we want something more out of our parsers: we want them to convert the input into a data structure that we can traverse easily.  In this section, we learn how to define a data type, and how to modify our parser so that it returns this data type.
 </p><p>
 First, we need to define a data type that can hold any Lisp value:
-</p><pre class="tutorial">data LispVal = Atom String
+<pre class="tutorial">
+data LispVal = Atom String
              | List [LispVal]
              | DottedList [LispVal] LispVal
              | Number Integer
@@ -174,26 +164,28 @@ This is an example of an <i>algebraic data type</i>: it defines a set of possibl
 <li>A <span class="inline_code">String</span>, containing a Haskell String</li>
 <li>A <span class="inline_code">Bool</span>, containing a Haskell boolean value</li>
 </ol>
-<p></p><p>
+</p><p>
 Constructors and types have different namespaces, so you can have both a constructor named String and a type named String.  Both types and constructor tags always begin with capital letters.
 </p><p>
 Next, let's add a few more parsing functions to create values of these types.  A string is a double quote mark, followed by any number of non-quote characters, followed by a closing quote mark:
-</p><pre class="tutorial">parseString :: Parser LispVal
+<pre class="tutorial">
+parseString :: Parser LispVal
 parseString = do char '"'
                  x &lt;- many (noneOf "\"")
                  char '"'
                  return $ String x
 </pre>
-We're back to using the do-notation instead of the &gt;&gt; operator.  This is because we'll be retrieving the value of our parse (returned by </a><a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#many">many</a> (<a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#noneOf">noneOf</a> "\"")) and manipulating it, interleaving some other parse operations in the meantime.  In general, use &gt;&gt; if the actions don't return a value, &gt;&gt;= if you'll be immediately passing that value into the next action, and do-notation otherwise.
-<p></p><p>
-Once we've finished the parse and have the Haskell String returned from <span class="inline_code">many</span>, we apply the String constructor (from our LispVal data type) to turn it into a LispVal.  Every constructor in an algebraic data type also acts like a function that turns its arguments into a value of its type.  It also serves as a pattern that can be used in the left-hand side of a pattern-matching expression; we saw an example of this in <a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/parser.html#symbols">Lesson 3.1</a> when we matched our parser result against the two constructors in the Either data type.
+We're back to using the do-notation instead of the &gt;&gt; operator.  This is because we'll be retrieving the value of our parse (returned by <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#many">many</a> (<a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#noneOf">noneOf</a> "\"")) and manipulating it, interleaving some other parse operations in the meantime.  In general, use &gt;&gt; if the actions don't return a value, &gt;&gt;= if you'll be immediately passing that value into the next action, and do-notation otherwise.
 </p><p>
-We then apply the built-in function <a href="http://web.archive.org/web/20100428073636/http://www.haskell.org/onlinereport/standard-prelude.html#$tMonad">return</a> to lift our LispVal into the Parser monad.  Remember, each line of a do-block must have the same type, but the result of our String constructor is just a plain old LispVal.  Return lets us wrap that up in a Parser action that consumes no input but returns it as the inner value.  Thus, the whole parseString action will have type Parser LispVal.
+Once we've finished the parse and have the Haskell String returned from <span class="inline_code">many</span>, we apply the String constructor (from our LispVal data type) to turn it into a LispVal.  Every constructor in an algebraic data type also acts like a function that turns its arguments into a value of its type.  It also serves as a pattern that can be used in the left-hand side of a pattern-matching expression; we saw an example of this in <a href="#symbols">Lesson 3.1</a> when we matched our parser result against the two constructors in the Either data type.
 </p><p>
-The $ operator is infix function application: it's the same as if we'd written <span class="inline_code">return (String x)</span>, but $ is right-associative, letting us eliminate some parentheses.  Since $ is an operator, you can do anything with it that you'd normally do to a function: pass it around, partially apply it, etc.  In this respect, it functions like the Lisp function <a href="http://web.archive.org/web/20100428073636/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.4">apply</a>.
+We then apply the built-in function <a href="http://web.archive.org/web/20131030041702/http://www.haskell.org/onlinereport/standard-prelude.html#$tMonad">return</a> to lift our LispVal into the Parser monad.  Remember, each line of a do-block must have the same type, but the result of our String constructor is just a plain old LispVal.  Return lets us wrap that up in a Parser action that consumes no input but returns it as the inner value.  Thus, the whole parseString action will have type Parser LispVal.
 </p><p>
-Now let's move on to Scheme variables.  An <a href="http://web.archive.org/web/20100428073636/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-5.html#%_sec_2.1">atom</a> is a letter or symbol, followed by any number of letters, digits, or symbols:
-</p><pre class="tutorial">parseAtom :: Parser LispVal
+The $ operator is infix function application: it's the same as if we'd written <span class="inline_code">return (String x)</span>, but $ is right-associative, letting us eliminate some parentheses.  Since $ is an operator, you can do anything with it that you'd normally do to a function: pass it around, partially apply it, etc.  In this respect, it functions like the Lisp function <a href="http://web.archive.org/web/20131030041702/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.4">apply</a>.
+</p><p>
+Now let's move on to Scheme variables.  An <a href="http://web.archive.org/web/20131030041702/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-5.html#%_sec_2.1">atom</a> is a letter or symbol, followed by any number of letters, digits, or symbols:
+<pre class="tutorial">
+parseAtom :: Parser LispVal
 parseAtom = do first &lt;- letter &lt;|&gt; symbol
                rest &lt;- many (letter &lt;|&gt; digit &lt;|&gt; symbol)
                let atom = [first] ++ rest
@@ -202,40 +194,45 @@ parseAtom = do first &lt;- letter &lt;|&gt; symbol
                           "#f" -&gt; Bool False
                           otherwise -&gt; Atom atom
 </pre>
-Here, we introduce another Parsec combinator, the choice operator <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#or">&lt;|&gt;</a>. This tries the first parser, then if it fails, tries the second.  If either succeeds, then it returns the value returned by that parser.  The first parser must fail before it consumes any input: we'll see later how to implement backtracking.
-<p></p><p>
+Here, we introduce another Parsec combinator, the choice operator <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#or">&lt;|&gt;</a>. This tries the first parser, then if it fails, tries the second.  If either succeeds, then it returns the value returned by that parser.  The first parser must fail before it consumes any input: we'll see later how to implement backtracking.
+</p><p>
 Once we've read the first character and the rest of the atom, we need to put them together.  The "let" statement defines a new variable "atom".  We use the list concatenation operator ++ for this.  Recall that <span class="inline_code">first</span> is just a single character, so we convert it into a singleton list by putting brackets around it.  If we'd wanted to create a list containing many elements, we need only separate them by commas.
 </p><p>
 Then we use a case statement to determine which LispVal to create and return, matching against the literal strings for true and false.  The <span class="inline_code">otherwise</span> alternative is a readability trick: it binds a variable named <span class="inline_code">otherwise</span>, whose value we ignore, and then always returns the value of <span class="inline_code">atom</span>
 </p><p>
 Finally, we create one more parser, for numbers.  This shows one more way of dealing with monadic values:
-</p><pre class="tutorial">parseNumber :: Parser LispVal
+<pre class="tutorial">
+parseNumber :: Parser LispVal
 parseNumber = liftM (Number . read) $ many1 digit
 </pre>
-It's easiest to read this backwards, since both function application ($) and function composition (.) associate to the right.  The parsec combinator <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#many1">many1</a> matches one or more of its argument, so here we're matching one or more digits.  We'd like to construct a number LispVal from the resulting string, but we have a few type mismatches.  First, we use the built-in function <a href="http://web.archive.org/web/20100428073636/http://www.haskell.org/onlinereport/standard-prelude.html#$vread">read</a> to convert that string into a number.  Then we pass the result to Number to get a LispVal.  The function composition operator "." creates a function that applies its right argument and then passes the result to the left argument, so we use that to combine the two function applications.  
-<p></p><p>
+It's easiest to read this backwards, since both function application ($) and function composition (.) associate to the right.  The parsec combinator <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#many1">many1</a> matches one or more of its argument, so here we're matching one or more digits.  We'd like to construct a number LispVal from the resulting string, but we have a few type mismatches.  First, we use the built-in function <a href="http://web.archive.org/web/20131030041702/http://www.haskell.org/onlinereport/standard-prelude.html#$vread">read</a> to convert that string into a number.  Then we pass the result to Number to get a LispVal.  The function composition operator "." creates a function that applies its right argument and then passes the result to the left argument, so we use that to combine the two function applications.  
+</p><p>
 Unfortunately, the result of <span class="inline_code">many1 digit</span> is actually a Parser String, so our combined <span class="inline_code">Number . read</span> still can't operate on it.  We need a way to tell it to just operate on the value inside the monad, giving us back a Parser LispVal.  The standard function <span class="inline_code">liftM</span> does exactly that, so we apply liftM to our <span class="inline_code">Number . read</span> function, and then apply the result of that to our Parser.
 </p><p>
 We also have to import the Monad module up at the top of our program to get access to liftM:
-</p><pre class="tutorial">import Monad
+<pre class="tutorial">
+import Monad
 </pre>
-<p></p><p>
+</p><p>
 This style of programming - relying heavily on function composition, function application, and passing functions to functions - is very common in Haskell code.  It often lets you express very complicated algorithms in a single line, breaking down intermediate steps into other functions that can be combined in various ways.  Unfortunately, it means that you often have to read Haskell code from right-to-left and keep careful track of the types.  We'll be seeing many more examples throughout the rest of the tutorial, so hopefully you'll get pretty comfortable with it.
 </p><p>
 Let's create a parser that accepts either a string, a number, or an atom:
-</p><pre class="tutorial">parseExpr :: Parser LispVal
+<pre class="tutorial">
+parseExpr :: Parser LispVal
 parseExpr = parseAtom
         &lt;|&gt; parseString
         &lt;|&gt; parseNumber
 </pre>
 And edit readExpr so it calls our new parser:
-<pre class="tutorial">readExpr :: String -&gt; String
+<pre class="tutorial">
+readExpr :: String -&gt; String
 readExpr input = case parse <span class="changed_code">parseExpr</span> "lisp" input of
     Left err -&gt; "No match: " ++ show err
     Right _ -&gt; "Found value"
 </pre>
 Compile and run this code, and you'll notice that it accepts any number, string, or symbol, but not other strings:
-<pre class="console">debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/.../code/listing3.3.hs">listing3.3.hs</a>
+<pre class="console">
+debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href=".../code/listing3.3.hs">listing3.3.hs</a>
 debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "\"this is a string\""
 Found value
 debian:/home/jdtang/haskell_tutorial/code# ./simple_parser 25 Found value
@@ -248,49 +245,53 @@ No match: "lisp" (line 1, column 1):
 unexpected "("
 expecting letter, "\"" or digit
 </pre>
-<p></p>
+</p>
 <h4>Exercises</h4>
 <ol>
 <li>Rewrite parseNumber using <ol style="list-style: upper alpha">
   <li>do-notation</li>
-  <li>explicit sequencing with the <a href="http://web.archive.org/web/20100428073636/http://www.haskell.org/onlinereport/standard-prelude.html#tMonad">&gt;&gt;=</a> operator</li>
+  <li>explicit sequencing with the <a href="http://web.archive.org/web/20131030041702/http://www.haskell.org/onlinereport/standard-prelude.html#tMonad">&gt;&gt;=</a> operator</li>
 </ol></li>
-<li>Our strings aren't quite <a href="http://web.archive.org/web/20100428073636/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.3.5">R5RS compliant</a>, because they don't support escaping of internal quotes within the string.  Change parseString so that \" gives a literal quote character instead of terminating the string.  You may want to replace <span class="inline_code">noneOf "\""</span> with a new parser action that accepts <i>either</i> a non-quote character <i>or</i> a backslash followed by a quote mark.</li>
+<li>Our strings aren't quite <a href="http://web.archive.org/web/20131030041702/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.3.5">R5RS compliant</a>, because they don't support escaping of internal quotes within the string.  Change parseString so that \" gives a literal quote character instead of terminating the string.  You may want to replace <span class="inline_code">noneOf "\""</span> with a new parser action that accepts <i>either</i> a non-quote character <i>or</i> a backslash followed by a quote mark.</li>
 <li>Modify the previous exercise to support \n, \r, \t, \\, and any other desired escape characters</li>
-<li>Change parseNumber to support the <a href="http://web.archive.org/web/20100428073636/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.2.4">Scheme standard for different bases</a>.  You may find the <a href="http://web.archive.org/web/20100428073636/http://www.haskell.org/onlinereport/numeric.html#sect14">readOct and readHex</a> functions useful.</li>
-<li>Add a Character constructor to LispVal, and create a parser for <a href="http://web.archive.org/web/20100428073636/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.3.4">character literals</a> as described in R5RS.</li>
-<li>Add a Float constructor to LispVal, and support R5RS syntax for <a href="http://web.archive.org/web/20100428073636/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.2.4">decimals</a>.  The Haskell function <a href="http://web.archive.org/web/20100428073636/http://www.haskell.org/onlinereport/numeric.html#sect14">readFloat</a> may be useful.</li>
-<li>Add data types and parsers to support the <a href="http://web.archive.org/web/20100428073636/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.2.1">full numeric tower</a> of Scheme numeric types.  Haskell has built-in types to represent many of these; check the <a href="http://web.archive.org/web/20100428073636/http://www.haskell.org/onlinereport/standard-prelude.html#$tNum">Prelude</a>.  For the others, you can define compound types that represent eg. a Rational as a numerator and denominator, or a Complex as a real and imaginary part (each itself a Real number).</li>
+<li>Change parseNumber to support the <a href="http://web.archive.org/web/20131030041702/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.2.4">Scheme standard for different bases</a>.  You may find the <a href="http://web.archive.org/web/20131030041702/http://www.haskell.org/onlinereport/numeric.html#sect14">readOct and readHex</a> functions useful.</li>
+<li>Add a Character constructor to LispVal, and create a parser for <a href="http://web.archive.org/web/20131030041702/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.3.4">character literals</a> as described in R5RS.</li>
+<li>Add a Float constructor to LispVal, and support R5RS syntax for <a href="http://web.archive.org/web/20131030041702/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.2.4">decimals</a>.  The Haskell function <a href="http://web.archive.org/web/20131030041702/http://www.haskell.org/onlinereport/numeric.html#sect14">readFloat</a> may be useful.</li>
+<li>Add data types and parsers to support the <a href="http://web.archive.org/web/20131030041702/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.2.1">full numeric tower</a> of Scheme numeric types.  Haskell has built-in types to represent many of these; check the <a href="http://web.archive.org/web/20131030041702/http://www.haskell.org/onlinereport/standard-prelude.html#$tNum">Prelude</a>.  For the others, you can define compound types that represent eg. a Rational as a numerator and denominator, or a Complex as a real and imaginary part (each itself a Real number).</li>
 </ol>
 <a name="lists">
 <h3>3.4: Recursive Parsers: Adding lists, dotted lists, and quoted datums</h3>
 <p>
 Next, we add a few more parser actions to our interpreter.  Start with the parenthesized lists that make Lisp famous:
-</p><pre class="tutorial">parseList :: Parser LispVal
+<pre class="tutorial">
+parseList :: Parser LispVal
 parseList = liftM List $ sepBy parseExpr spaces
 </pre>
-This works analogously to parseNumber, first parsing a series of expressions separated by whitespace (<span class="inline_code">sepBy parseExpr spaces</span>) and then apply the List constructor to it within the Parser monad.  Note too that we can pass parseExpr to </a><a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#sepBy">sepBy</a>, even though it's an action we wrote ourselves.
-<p></p><p>
+This works analogously to parseNumber, first parsing a series of expressions separated by whitespace (<span class="inline_code">sepBy parseExpr spaces</span>) and then apply the List constructor to it within the Parser monad.  Note too that we can pass parseExpr to <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#sepBy">sepBy</a>, even though it's an action we wrote ourselves.
+</p><p>
 The dotted-list parser is somewhat more complex, but still uses only concepts that we're already familiar with:
-</p><pre class="tutorial">parseDottedList :: Parser LispVal
+<pre class="tutorial">
+parseDottedList :: Parser LispVal
 parseDottedList = do
     head &lt;- endBy parseExpr spaces
     tail &lt;- char '.' &gt;&gt; spaces &gt;&gt; parseExpr
     return $ DottedList head tail
 </pre>
 Note how we can sequence together a series of Parser actions with &gt;&gt; and then use the whole sequence on the right hand side of a do-statement.  The expression <span class="inline_code">char '.' &gt;&gt; spaces</span> returns a <span class="inline_code">Parser ()</span>, then combining that with parseExpr gives a Parser LispVal, exactly the type we need for the do-block.
-<p></p><p>
+</p><p>
 Next, let's add support for the single-quote syntactic sugar of Scheme:
-</p><pre class="tutorial">parseQuoted :: Parser LispVal
+<pre class="tutorial">
+parseQuoted :: Parser LispVal
 parseQuoted = do
     char '\''
     x &lt;- parseExpr
     return $ List [Atom "quote", x]
 </pre>
 Most of this is fairly familiar stuff: it reads a single quote character, reads an expression and binds it to x, and then returns <span class="inline_lisp">(quote x)</span>, to use Scheme notation.  The Atom constructor works like an ordinary function: you pass it the String you're encapsulating, and it gives you back a LispVal.  You can do anything with this LispVal that you normally could, like put it in a list.
-<p></p><p>
+</p><p>
 Finally, edit our definition of parseExpr to include our new parsers:
-</p><pre class="tutorial">parseExpr :: Parser LispVal
+<pre class="tutorial">
+parseExpr :: Parser LispVal
 parseExpr = parseAtom
         &lt;|&gt; parseString
         &lt;|&gt; parseNumber
@@ -300,10 +301,11 @@ parseExpr = parseAtom
                char ')'
                return x</span>
 </pre>
-This illustrates one last feature of Parsec: backtracking.  parseList and parseDottedList recognize identical strings up to the dot; this breaks the requirement that a choice alternative may not consume any input before failing.  The <a href="http://web.archive.org/web/20100428073636/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#try">try</a> combinator attempts to run the specified parser, but if it fails, it backs up to the previous state.  This lets you use it in a choice alternative without interfering with the other alternative.
-<p></p><p>
+This illustrates one last feature of Parsec: backtracking.  parseList and parseDottedList recognize identical strings up to the dot; this breaks the requirement that a choice alternative may not consume any input before failing.  The <a href="http://web.archive.org/web/20131030041702/http://www.cs.uu.nl/~daan/download/parsec/parsec.html#try">try</a> combinator attempts to run the specified parser, but if it fails, it backs up to the previous state.  This lets you use it in a choice alternative without interfering with the other alternative.
+</p><p>
 Compile and run this code:
-</p><pre class="console">debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/code/listing3.4.hs">listing3.4.hs</a>
+<pre class="console">
+debian:/home/jdtang/haskell_tutorial/code# ghc -package parsec -o simple_parser <a href="/web/20131030041702/http://jonathan.tang.name/files/scheme_in_48/code/listing3.4.hs">listing3.4.hs</a>
 debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(a test)"
 Found value
 debian:/home/jdtang/haskell_tutorial/code# ./simple_parser "(a (nested) test)" Found value
@@ -317,21 +319,21 @@ unexpected end of input
 expecting space or ")"
 </pre>
 Note that by referring to parseExpr within our parsers, we can nest them arbitrarily deep.  Thus, we get a full Lisp reader with only a few definitions.  That's the power of recursion.
-<p></p>
+</p>
 <h4>Exercises</h4>
 <ol>
-<li>Add support for the <a href="http://web.archive.org/web/20100428073636/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-7.html#%_sec_4.2.6">backquote</a> syntactic sugar: the Scheme standard details what it should expand into (quasiquote/unquote).</li>
-<li>Add support for <a href="http://web.archive.org/web/20100428073636/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.3.6">vectors</a>.  The Haskell representation is up to you: GHC does have an <a href="http://web.archive.org/web/20100428073636/http://www.haskell.org/ghc/docs/latest/html/libraries/base/Data-Array.html">Array</a> data type, but it can be difficult to use.  Strictly speaking, a vector should have constant-time indexing and updating, but destructive update in a purely functional language is difficult.  You may have a better idea how to do this after the section on set!, later in this tutorial.</li>
+<li>Add support for the <a href="http://web.archive.org/web/20131030041702/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-7.html#%_sec_4.2.6">backquote</a> syntactic sugar: the Scheme standard details what it should expand into (quasiquote/unquote).</li>
+<li>Add support for <a href="http://web.archive.org/web/20131030041702/http://www.schemers.org/Documents/Standards/R5RS/HTML/r5rs-Z-H-9.html#%_sec_6.3.6">vectors</a>.  The Haskell representation is up to you: GHC does have an <a href="http://web.archive.org/web/20131030041702/http://www.haskell.org/ghc/docs/latest/html/libraries/base/Data-Array.html">Array</a> data type, but it can be difficult to use.  Strictly speaking, a vector should have constant-time indexing and updating, but destructive update in a purely functional language is difficult.  You may have a better idea how to do this after the section on set!, later in this tutorial.</li>
 <li>Instead of using the try combinator, left-factor the grammar so that the common subsequence is its own parser.  You should end up with a parser that matches a string of expressions, and one that matches either nothing or a dot and a single expressions.  Combining the return values of these into either a List or a DottedList is left as a (somewhat tricky) exercise for the reader: you may want to break it out into another helper function</li>
 </ol>
 <div align="right">
-<a href="http://web.archive.org/web/20100428073636/http://jonathan.tang.name/files/scheme_in_48/tutorial/evaluator1.html">Next - Evaluation, Part 1</a>
+<a href="evaluator1.html">Next - Evaluation, Part 1</a>
 </div>
-
-
+</body>
+</html>
 <!--
-     FILE ARCHIVED ON 07:36:36 Apr 28, 2010 AND RETRIEVED FROM THE
-     INTERNET ARCHIVE ON 09:18:58 Jan 11, 2021.
+     FILE ARCHIVED ON 04:17:02 Oct 30, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:54:33 Jan 11, 2021.
      JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
 
      ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
@@ -339,14 +341,14 @@ Note that by referring to parseExpr within our parsers, we can nest them arbitra
 -->
 <!--
 playback timings (ms):
-  exclusion.robots.policy: 0.202
-  exclusion.robots: 0.212
-  CDXLines.iter: 15.235 (3)
-  esindex: 0.008
-  RedisCDXSource: 2.388
-  PetaboxLoader3.resolve: 51.353 (2)
-  captures_list: 162.066
-  load_resource: 83.328
-  LoadShardBlock: 142.003 (3)
-  PetaboxLoader3.datanode: 145.274 (4)
---></body></html>
+  exclusion.robots.policy: 0.21
+  LoadShardBlock: 644.466 (3)
+  RedisCDXSource: 4.784
+  exclusion.robots: 0.224
+  CDXLines.iter: 15.413 (3)
+  PetaboxLoader3.datanode: 664.626 (4)
+  esindex: 0.013
+  PetaboxLoader3.resolve: 48.277
+  captures_list: 667.835
+  load_resource: 73.229
+-->
